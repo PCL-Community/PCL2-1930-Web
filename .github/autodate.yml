@@ -1,0 +1,29 @@
+name: Update Time
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update_time:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Add write permission to index.html
+      run: chmod +w index.html
+
+    - name: Update Time
+      run: |
+        sed -i "s#<p>更新时间：</p>#<p>更新时间：$(date +"%Y-%m-%d %H:%M:%S")</p>#" index.html
+
+    - name: Commit changes
+      run: |
+        git config --global user.name "LingyunAwA"
+        git config --global user.email "1913532130@qq.com"
+        git add index.html
+        git commit -m "Update time: $(date +"%Y-%m-%d %H:%M:%S")"
+        git push
