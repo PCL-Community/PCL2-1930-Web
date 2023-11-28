@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            常见&难检反馈及问题列表
+        </title>
+        <link rel="shortcut icon" href="/static/image/pcl.ico" type="image/x-icon">
+        <link rel="stylesheet" href="static/css/navbar.css">
+        <link rel="stylesheet" href="static/css/index.css">
+        <link rel="stylesheet" href="static/css/badge.css">
+        <link href="//cdn.staticfile.org/layui/2.8.17/css/layui.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="video-background">
+            <video autoplay muted loop id="videobg">
+                <source src="https://gitcode.net/JingHai_Lingyun/cdn/-/raw/master/video/sakura.ogv" type="video/mp4">
+            </video>
+            <div class="blur-overlay"></div>
+        </div>
+        <!-- MARK 头部 -->
+        <header class="navbar">
+            <nav>
+                <div class="container">
+                    <div class="logo-container">
+                        <img src="static/image/pcl.ico">
+                        <span class="logotxt">
+                            【镜像】常见&难检反馈及问题列表
+                        </span>
+                    </div>
+                    <button class="right-container" onclick="openyuan()">
+                        <i class="layui-icon layui-icon-github"></i>
+                </div>
+                </div>
+            </nav>
+        </header>
+        <!-- MARK 主体 -->
+        <div class="main-container">
+            <h1>
+                <span class="bg">💬 前言</span>
+            </h1>
+            <p><span class="bg">
+                这是一个镜像站，内容为
+                <a href="https://github.com/Hex-Dragon/PCL2/discussions/1930">
+                    这里
+                </a>
+                的常见&难检反馈及问题列表
+            </span></p>
+            <p><span class="bg">
+                本镜像每周天必更新一次，当然，我有空了也会更新
+            </span></p>
+            <p><span class="bg">
+                条目较多，你可以使用 Ctrl+F 在此网页搜索需要的内容
+            </span></p>
+            <p><span class="bg">
+                参考资料中，
+                <span class="layui-badge layui-bg-blue">
+                    #
+                </span>
+                代表 Issue 帖子，
+                <span class="layui-badge layui-bg-green">
+                    #
+                </span>
+                代表 Discussion 帖子，
+                <span class="layui-badge layui-bg-orange">
+                    xxx
+                </span>
+                代表外链，三种链接点击即可跳转
+            </span></p>
+            <p style="margin-left: 144px;"><span class="bg">
+                <span class="layui-badge">
+                    PCL2 内置帮助库
+                </span>
+                点击时将展示内置帮助文件路径，
+                <span class="layui-badge layui-bg-black">
+                    附文
+                </span>
+                点击时将跳出一个小窗口以展示附文内容
+            </span></p>
+            <br>
+            <br>
+            <br>
+            <h1><span class="bg">
+                📁 常见&难检反馈及问题列表
+            </span></h1>
+            <table class="layui-table">
+                <colgroup>
+                    <col width="20%">
+                    <col width="50%">
+                    <col width="30%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>
+                            常见问题
+                        </th>
+                        <th>
+                            相关解释
+                        </th>
+                        <th>
+                            参考
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <b>
+                                联机！
+                            </b>
+                        </td>
+                        <td>
+                            <b><i>“关于联机，希望大家先，呃，放低期待……” ——龙腾猫跃</i></b>
+                            <br>
+                            <i>BakaXL 现已于 2023 年 10 月 8 日将其部分服务与 Octo 章鱼网络进行对接，并对其可用性进行初步评估，待评估完成后，Octo 网络会全面对其他启动器开放。</i>
+                            <a id="fzb2" onclick="fz()">
+                                [1]
+                            </a>
+                        </td>
+                        <td>
+                            <div style="display:flex">
+                                <span class="layui-badge layui-bg-orange" onclick="opengh(-11)">
+                                    2.6.10 更新日志
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>
+                                1.16.4 及 1.16.5 离线模式无法进入多人游戏界面
+                            </b>
+                        </td>
+                        <td>
+                            <b>
+                                PCL 不会解决该问题，这超出了启动器功能范畴。如仍需要使用多人游戏
+                                <a id="fzb2" onclick="fz()">
+                                    [2]
+                                </a>
+                                ，请自行断网启动游戏或安装
+                                <a href="https://github.com/MCTeamPotato/MultiOfflineFix">
+                                    MultiOfflineFix
+                                </a>
+                                或
+                                <a href="https://github.com/ChickenPige0n/offline-multiplayer-fabric">
+                                    Offline Multiplayer
+                                </a>
+                                模组。同时您可以参考
+                                <a href="https://github.com/Hex-Dragon/PCL2/discussions/1930#discussioncomment-6797858">
+                                    此处的解决方案
+                                </a>
+                                或使用
+                                <a href="https://www.mcbbs.net/thread-1450892-1-1.html">
+                                    Authlib
+                                </a>
+                                更新工具来彻底解决此问题。
+                            </b>
+                        </td>
+                        <td>
+                            <span class="layui-badge" id="help1" onclick="pclhelp1()">
+                                PCL2 内置帮助库
+                            </span>
+                            <span class="layui-badge layui-bg-green" onclick="opengh(2003)">
+                                #2003
+                            </span>
+                            <span class="layui-badge layui-bg-green" onclick="opengh(2017)">
+                                #2017
+                            </span>
+                            <span class="layui-badge layui-bg-green" onclick="opengh(2004)">
+                                #2004
+                            </span>
+                            <span class="layui-badge layui-bg-green" onclick="opengh(1930)">
+                                #1930
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            PCL 消失或报毒
+                        </td>
+                        <td>
+                            是 Windows Defender 和杀软 的锅，请在
+                            <a href="https://support.microsoft.com/zh-cn/windows/%E5%B0%86%E6%8E%92%E9%99%A4%E9%A1%B9%E6%B7%BB%E5%8A%A0%E5%88%B0-windows-%E5%AE%89%E5%85%A8%E4%B8%AD%E5%BF%83-811816c0-4dfd-af4a-47e4-c301afe13b26">
+                                Windows 安全中心和杀软中添加排除项或白名单
+                            </a>
+                            ，具体教程见 PCL2 内置帮助库。
+                        </td>
+                        <td>
+                            <span class="layui-badge" id="help2" onclick="pclhelp2()">
+                                PCL2 内置帮助库
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(56)">
+                                #56
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(666)">
+                                #666
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            游戏崩溃
+                        </td>
+                        <td>
+                            点击右侧按钮展示附文，按附文处理。
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-black" lay-on="fuwen">
+                                附文
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            无法登录正版账户：你可能没有在 Minecraft 官网创建档案，或者没有购买 Minecraft。
+                        </td>
+                        <td>
+                            是 Mojang 的 Bug，与 PCL 无关。请前往
+                            <a href="https://www.minecraft.net/login">
+                                Minecraft.net
+                            </a>
+                            登录您的 Minecraft 账号后，稍等一会即可使用 PCL 正常进行登录。
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(1299)">
+                                #1299
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(1264)">
+                                #1264
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            无法进入服务器
+                        </td>
+                        <td>
+                            非PCL问题，具体可的解决方案见内置帮助库或前往相关论坛寻求帮助。
+                        </td>
+                        <td>
+                            <span class="layui-badge" id="help3" onclick="pclhelp3()">
+                                PCL2 内置帮助库
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            中国移动中国联通网络下无法登录正版账户但网络速度良好
+                        </td>
+                        <td>
+                            原因为使用中国联通或中国移动网络下 api.minecraftservices.com 和二级域名为 mojang.com 的地址均被墙，请尝试使用中国电信网络或使用 VPN，具体信息见 #2738
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-green" onclick="opengh(2738)">
+                                #2738
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            支持启动器多语言
+                        </td>
+                        <td>
+                            <span class="layui-badge zhcl">
+                                暂缓处理
+                            </span>
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(891)">
+                                #891
+                            </span>
+                            <span class="layui-badge layui-bg-green" onclick="opengh(2567)">
+                                #2567
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            增加导出整合包功能
+                        </td>
+                        <td>
+                            <span class="layui-badge zhcl">
+                                暂缓处理
+                            </span>
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(98)">
+                                #98
+                            </span>
+                            <span class="layui-badge layui-bg-green" onclick="opengh(100)">
+                                #100
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            支持启动基岩版及 Minecraft 其他衍生游戏
+                        </td>
+                        <td>
+                            <i>
+                                “这玩意儿我根本启动不了！用官方启动器吧！告辞！” <br>——龙腾猫跃
+                            </i>
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(81)">
+                                #81
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            支持更新 Mod
+                        </td>
+                        <td>
+                            <span class="layui-badge zhcl">
+                                暂缓处理
+                            </span>
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(102)">
+                                #102
+                            </span>
+                            <span class="layui-badge layui-bg-green" onclick="opengh(103)">
+                                #103
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            支持更新整合包
+                        </td>
+                        <td>
+                            <span>
+                                因新旧整合包可能存在兼容性等冲突问题，不会制作。
+                            </span>
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(2854)">
+                                #2854
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            爱发电无法收到加群信息或更新密钥
+                        </td>
+                        <td>
+                            加群请
+                            <b>
+                                在爱发电
+                            </b>
+                            回复【加群】，更新密钥
+                            <b>
+                                在爱发电
+                            </b>
+                            获取请回复【更新+识别码】。如无法收到回复，很可能是你已经触发了人工回复，在等待人工回复的过程中无法使用命令。你如果只是想使用命令，可以发送【取消人工处理】。如仍旧没有回复，可以等待一会后再进行尝试。
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-orange" onclick="opengh(-10)">
+                                石墨文档
+                            </span>
+                            <span class="layui-badge layui-bg-green" onclick="opengh(1867)">
+                                #1867
+                            </span>
+                            <span class="layui-badge layui-bg-green" onclick="opengh(1529)">
+                                #1529
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            支持 MacOS、Linux、IOS、安卓 等其他操作系统
+                        </td>
+                        <td>
+                            由于 PCL 的底层界面框架（WPF）无法跨系统，要兼容其他系统无异于完全重做，不会制作。
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(54)">
+                                #54
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            添加皮肤库
+                        </td>
+                        <td>
+                            -
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(343)">
+                                #343
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            支持离线披风
+                        </td>
+                        <td>
+                            技术上无法实现。
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(700)">
+                                #700
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            支持调整 Optifine 和第三方披风选项
+                        </td>
+                        <td>
+                            暂时不打算制作。
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(2045)">
+                                #2045
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(2065)">
+                                #2065
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            1.19.3 不支持自定义皮肤
+                        </td>
+                        <td>
+                            <span class="layui-badge zhcl">
+                                暂缓处理
+                            </span>
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(1288)">
+                                #1288
+                            </span>
+                            <span class="layui-badge layui-bg-green" onclick="opengh(1596)">
+                                #1596
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Minecraft 更新后 PCL 内未找到该最新版本
+                        </td>
+                        <td>
+                            请在 设置-启动器-下载-版本列表获取 选择 尽量使用官方源。
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-green" onclick="opengh(1226)">
+                                #1226
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            支持下载地图
+                        </td>
+                        <td>
+                            存在语言问题
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(44)">
+                                #44
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(135)">
+                                #135
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            支持下载资源包（材质包&纹理包）
+                        </td>
+                        <td>
+                            <span class="layui-badge zhcl">
+                                暂缓处理
+                            </span>
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(44)">
+                                #44
+                            </span>
+                            <span class="layui-badge layui-bg-green" onclick="opengh(1095)">
+                                #1095
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            支持下载第三方服务端及插件
+                        </td>
+                        <td>
+                            PCL 是启动器，此功能超出了启动器的范畴。
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(108)">
+                                #108
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            支持光影下载
+                        </td>
+                        <td>
+                            <span class="layui-badge zhcl">
+                                暂缓处理
+                            </span>
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(396)">
+                                #396
+                            </span>
+							<span class="layui-badge layui-bg-green" onclick="opengh(2768)">
+								#2768
+							</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            支持数据包下载
+                            <td>
+                                无可用 API。
+                            </td>
+                            <td>
+                                <span class="layui-badge layui-bg-blue" onclick="opengh(871)">
+                                    #871
+                                </span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            引进新 Mod / 整合包下载源
+                        </td>
+                        <td>
+                            没有其他可用的国内的 API。
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(1658)">
+                                #1658
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            修改、添加、移除、更新已安装版本的 optifine、forge 等组件和模组加载器
+                        </td>
+                        <td>
+                            <span class="layui-badge zhcl">
+                                暂缓处理
+                            </span>
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(220)">
+                                #220
+                            </span>
+                            <span class="layui-badge layui-bg-green" onclick="opengh(227)">
+                                #227
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            允许管理存档、光影文件
+                        </td>
+                        <td>
+                            -
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(388)">
+                                #388
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(396)">
+                                #396
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            支持导出 Mod 列表
+                        </td>
+                        <td>
+                            <span class="layui-badge zhcl">
+                                暂缓处理
+                            </span>
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(2586)">
+                                #2586
+                            </span>
+                            <span class="layui-badge layui-bg-green" onclick="opengh(2590)">
+                                #2590
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            添加 Mod 收藏夹
+                        </td>
+                        <td>
+                            <span class="layui-badge zhcl">
+                                暂缓处理
+                            </span>
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(487)">
+                                #487
+                            </span>
+                            <span class="layui-badge layui-bg-green" onclick="opengh(1646)">
+                                #1646
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            无法搜索到指定 Mod & Mod 搜索筛选选项异常 & Mod 搜索匹配版本错误 & Mod 详情页前置问题 等 Mod 搜索问题
+                        </td>
+                        <td>
+                            为 API 或 Mod 作者上传时的设置问题，PCL 无法解决。
+                            <a id="fzb2" onclick="fz()">
+                                [3]
+                            </a>
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(2352)">
+                                #2352
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(2277)">
+                                #2277
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(2190)">
+                                #2190
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(2096)">
+                                #2096
+                            </span>
+                            等 Issues
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            兼容暗黑模式
+                        </td>
+                        <td>
+                            <i>
+                                “这个基本上要重新设计所有界面，工作量太大了，我猜我都不会做……”
+                                <br>
+                                ——龙腾猫跃
+                            </i>
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(131)">
+                                #131
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            支持安装 NeoForge
+                        </td>
+                        <td>
+                            <span class="layui-badge clz">
+                                处理中
+                            </span>
+                            <span class="layui-badge tc">
+                                第三方
+                            </span>
+                            <a href="https://github.com/Hex-Dragon/PCL2/issues/2244#issuecomment-1687345863">
+                                现镜像源已上线
+                            </a>
+                            ，等待 BMCLAPI 支持 Quilt 下载后一并制作。
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(2244)">
+                                #2244
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            支持识别、安装 Quilt
+                        </td>
+                        <td>
+                            <span class="layui-badge clz">
+                                处理中
+                            </span>
+                            <span class="layui-badge tc">
+                                第三方
+                            </span>
+                            等待 BMCLAPI 支持。
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(48)">
+                                #48
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Mod 管理允许按时间排序 (Mod 管理允许选择使用多种排序方式)
+                        </td>
+                        <td>
+                            <span class="layui-badge zhcl">
+                                暂缓处理
+                            </span>
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(2698)">
+                                #2698
+                            </span>
+                            <span class="layui-badge layui-bg-green" onclick="opengh(2700)">
+                                #2700
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Mod 管理允许扫描子文件夹 Mod
+                        </td>
+                        <td>
+                            此功能已被移除
+                            <a id="fzb3" onclick="fz()">
+                                [4]
+                            </a>
+                            ，但如果子文件夹名称为版本名则仍会读取并加载。
+                            <br>
+                            <br>
+                            对于 Quilt 加载器下识别子文件夹 Mod 功能：
+                            <span class="layui-badge clz">
+                                处理中
+                            </span>
+                            <span class="layui-badge tc">
+                                推迟
+                            </span>
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(811)">
+                                #811
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(1098)">
+                                #1098
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(1536)">
+                                #1536
+                            </span>
+                            <span style="font-size: 24px;">
+                                &nbsp;&nbsp;Quilt:
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(1784)">
+                                #1784
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            添加更多 Minecraft 版本
+                        </td>
+                        <td>
+                            不会添加除现已收录的远古版本外的其他远古版本，同时也不会收录社区玩家制作的 Minecraft 版本 (如：error422、alpha v1.2.3_03
+                            等)。
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(698)">
+                                #698
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(2575)">
+                                #2575
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            添加云端账户、启动器内置社区、云端同步账户数据、云端同步隐藏主题、官网等
+                        </td>
+                        <td>
+                            无法抵御攻击，不会制作任何有关云端账号的内容。
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(315)">
+                                #315
+                            </span>
+                            等 Issues
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            隐藏主题迁移
+                        </td>
+                        <td>
+                            考虑到隐私问题，不考虑支持导出此类信息。
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(760)">
+                                #760
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            有关拓展隐藏主题、自定义主题、背景图片功能的 Issue
+                        </td>
+                        <td>
+                            备注：此类 Issue 大概率会因为必要性及优先级较低被拒绝，但不排除个别会被采纳，仅作参考。
+                            <br>
+                            <i>
+                                搜索关键词：毛玻璃、背景、透明、标题、隐藏主题、音乐、图标、暗黑、RGB、渐变。
+                            </i>
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(2216)">
+                                #2216
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(1487)">
+                                #1487
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(1653)">
+                                #1653
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(1242)">
+                                #1242
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(840)">
+                                #840
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(791)">
+                                #791
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(711)">
+                                #711
+                            </span>
+                            <br><p>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(562)">
+                                #562
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(401)">
+                                #401
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(131)">
+                                #131
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            使用滑稽彩导致卡顿&掉帧&占用过大
+                        </td>
+                        <td>
+                            无法解决或优化此类问题。
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(1575)">
+                                #1575
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(1590)">
+                                #1590
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(2336)">
+                                #2336
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            启动器字体自定义
+                        </td>
+                        <td>
+                            会导致严重的 UI 适配问题，不考虑制作。
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(1724)">
+                                #1724
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(766)">
+                                #766
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(366)">
+                                #366
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            无法准确设置游戏分辨率
+                        </td>
+                        <td>
+                            PCL 无法准确设置该数值，因为不同系统环境下窗口标题栏和边框的大小不一致。
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(1478)">
+                                #1478
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(1077)">
+                                #1077
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            有关与 Minecraft 服务器交互的内容
+                        </td>
+                        <td>
+                            -
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(829)">
+                                #829
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(1993)">
+                                #1993
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            接入 AI 语言模型
+                        </td>
+                        <td>
+                            <i>
+                                -
+                            </i>
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(2791)">
+                                #2791
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(1557)">
+                                #1557
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            允许使用相对路径
+                        </td>
+                        <td>
+                            <i>
+                                "改这个那一大堆路径设置绝壁一周之内就会出来一大堆反馈让我加相对路径，想想都吓人，算了……" <br>——龙腾猫跃
+                            </i>
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(1568)">
+                                #1568
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(1292)">
+                                #1292
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(1080)">
+                                #1080
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            将更新日志连接更换为 Biligame Wiki
+                        </td>
+                        <td>
+                            镜像源更新速度较慢，不考虑使用。
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(1884)">
+                                #1884
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(1537)">
+                                #1537
+                            </span>
+                        </td>
+                    </tr>
+                    <tr> 
+                        <td>
+                            游戏崩溃时加粗或突出窗口中 “而不是发送这个窗口的截图” 字样
+                        </td> 
+                        <td>
+                            <i>“没救，侠客咋样都是侠客” ——龙腾猫跃</i>
+                        </td> 
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(2153)">
+                                #2153
+                            </span>
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td>
+                            支持第三方登录全局设置
+                        </td>
+                        <td>
+                            <span class="layui-badge zhcl">暂缓处理</span>
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(57)">
+                                #57
+                            </span>
+                            <span class="layui-badge layui-bg-green" onclick="opengh(58)">
+                                #58
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            有关 “千万别点” 的 Issue
+                        </td>
+                        <td>
+                            PCL <b>不会受理</b>关于 “千万别点” 的<b>任何</b> Issues。
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(460)">
+                                #460
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(398)">
+                                #398
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(407)">
+                                #407
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(677)">
+                                #677
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(796)">
+                                #796
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(1147)">
+                                #1147
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(1923)">
+                                #1923
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            以管理员权限运行时无法使用文件拖拽功能
+                        </td>
+                        <td>
+                            <b>[需要社区帮助]</b> <i>“尽可能尝试修复相关代码，依然无法解决……如果谁有解决方案可以提出”</i> ——龙腾猫跃
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(2531)">
+                                #2531
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            选中 PCL 文件并快速敲击 Enter 会导致 PCL 多开并报错提示
+                        </td>
+                        <td>
+                            无法正确检测，不会修复。
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(1372)">
+                                #1372
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            内存优化后（或已使用内存过小时）已使用内存部分不显示具体数字
+                        </td>
+                        <td>
+                            由于排版空间不够不予以显示，同时考虑到大部分玩家在内存占用极低时不会计较具体占用内存数，因此这是刻意的设计。
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(1924)">
+                                #1924
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            切换音频设备后，音乐播放不会自动切换到新设备
+                        </td>
+                        <td>
+                            NAudio 的 Bug，技术上无法处理。
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(480)">
+                                #480
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            播放音乐时提示线程执行失败：NoDriver calling waveOutRestart
+                        </td>
+                        <td>
+                            NAudio 的 Bug，技术上无法处理。
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(1753)">
+                                #1753
+                            </span>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(2348)">
+                                #2348
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            启动游戏时出现弹窗报错：GLFW error 65543
+                        </td>
+                        <td>
+                            检查是否使用了正确的显卡（或独立显卡）启动 PCL。
+                        </td>
+                        <td>
+                            <span class="layui-badge layui-bg-blue" onclick="opengh(2215)">
+                                #2215
+                            </span>
+                        </td>
+                    </tr>
+                    <!-- TEMPLATE <tr> <td></td> <td></td> <td></td> </tr> -->
+                </tbody>
+            </table>
+            <br><br><br>
+            <h1 style="color:black">🙂 附注</h1>
+            <div class="fzbg">
+                <span id="fz1">1. ▷ 请注意，Octo 开放不等价于 PCL 上线联机，具体信息以龙猫发布的消息为准，仅供参考。届时切勿散布任何未经相关启动器作者及服务提供方证实的信息。<a onclick="fzb1()">↩</a></span>
+                <br><br>
+                <span id="fz2">2. 请注意，离线账号登录服务器本身违反 <a href="https://www.minecraft.net/en-us/eula">Minecraft 最终用户协议</a> 提及的 <a href="https://www.minecraft.net/en-us/usage-guidelines">Minecraft 使用准则</a> 的内容 ( 原文如此：<i>Access to your server: Must only be granted to users who have a genuine <b>paid-for version of Minecraft</b></i> ) ，请谨慎考虑。 <a onclick="fzb2()">↩</a></span>
+                <br><br>
+                <span id="fz3">3. 其中，若较老 Mod 搜索结果无法显示支持模组加载器，此为早期 Curseforge 不支持设置上传的 Mod 文件选择模组加载器导致；对于输入搜索关键词无法搜索到指定 Mod 或搜索时出现无关 Mod，此为 API 问题；如确认为 Mod 作者上传时的设置问题，如错误地选择了不支持的版本、Mod 前置标记错误、译名错误等问题，而非前两者问题，请尝试联系 Mod 作者或 MCMOD 百科页（仅译名问题）进行沟通确认。 <a onclick="fzb3()">↩</a></span>
+                <br><br>
+                <span id="fz4">4. 由于 .minecraft/mods 文件夹下创建的子文件夹内的 Mod 不被模组加载器（此为如 Forge、Fabric 类模组加载器行为，非 PCL 行为）加载，因此在新版本中移除了此功能。 <a onclick="fzb4()">↩</a></span> 
+            </div>
+        </div>
+        <div class="footer">
+            <p>此站作者 JingHai_Lingyun（Github：<a href="https://github.com/JingHai_Lingyun">@JingHai-Lingyun</a>）</p>
+            <p>更新时间：</p>
+            <p>如有更新不及时，请到 <a href="https://github.com/lingyunawa/pcl-doc/">这里</a> 发 Issue 或者 PR</p>
+        </div>
+
+        <!-- MARK 此部分用于 Popout 层展示 -->
+        <div id="ID-test-layer-wrapper" style="display:none">
+            <style>
+                h2{margin-bottom: 10px;}
+                h3{margin-bottom: 7.5px;}
+                p{margin-bottom: 5px;}
+                #command{background-color: #e3e6e9;border-radius: 3px;padding:1px 4px;cursor: pointer;position: relative;}
+                #command::before{content: attr(data-copy-text); background-color: black; color: white; padding: 2px 6px; position: absolute; top: -27px; left: 55px; opacity: 0;border-radius: 10px;transition: opacity 0.3s;}
+                #command:hover::before {opacity: 1;}
+                #example{margin-bottom: 4px; padding:5px 10px; background-color:#f7f7f7; width:max-content; border-radius:5px;}
+                .layui-badge.ok{ background-color: green; }
+            </style>
+            <div style="padding: 32px;">
+                <h1>如何优雅地解决问题&提交反馈？</h1>
+                <hr>
+                <h2>我游戏崩了！急急急急急急</h2>
+                <p>先别急，请导出并保存 PCL 输出的错误报告，首先尝试在相关 Minecraft 论坛、QQ 群（或 KOOK 群等相关 Minecraft 社群）、PCL 仓库 Discussions 提问板块 <b>上传您的错误报告</b>并描述您的具体情况。请注意，<b>不要仅上传 PCL 窗口的截图！不要仅上传 PCL 窗口的截图！不要仅上传 PCL 窗口的截图！ </b>也请在提问过程中尽可能保持 <b>平和友善的语气</b>，这会使您的问题得以更快解决。当游戏使用 PCL 启动或游玩过程中崩溃，而使用其他启动器启动或游玩时并未出现崩溃情况时，请在本仓库提交 Issue，并上传 PCL 日志及游戏崩溃报告、HMCL 启动脚本（如有）</p>
+                <p>如果你在求助时被指出需要提供 Mod 列表，可以在启动器中的 “启动前执行命令” 栏输入 <span id="command">dir "{verindie}mods" /b | clip</span> 后重新启动游戏，Mod 列表就会被复制到剪贴板。</p>
+                <h2>我想交反馈！</h2>
+                <h3><b>1. 重复反馈自检（重要）</b></h3>
+                <p>在提交反馈前，请先确认您想提交的内容是否被他人提交，在 Issues 页面中的搜索栏搜索您想提交的内容的关键词。如：“支持识别和安装 Quilt”，您可以搜索 “Quilt” “加载器” “识别” “安装” 等关键词。在出现搜索结果后，在 Open 部分查看是否有相似 Issue，如没有，请单击 Closed 字样并再次检查是否有相似 Issue，如搜索结果过多，可以在搜索栏中添加 label:忽略 或 label:"拒绝 / 放弃" 来缩小检索范围。</p>
+                <h3><b>2. 反馈类型确认</b></h3>
+                <p>完成后，单击 New Issue 按钮，根据列表各项提示，选择您要提交的 Issue 类型。其中对于 Minecraft 崩溃，请见上条 “我游戏崩了！急急急急急急” 的描述后再提交 Issue。</p>
+                <h3><b>3. 撰写反馈内容并提交信息（重要）</b></h3>
+                <p><b>3.1 </b>首先一一完成页面中出现的检查项，<b>确认无误后</b>开始填写反馈内容。在编辑 Issue 标题时，请尽量保证标题<b>简短且可以有效概括反馈内容</b>。如：</p>
+                <div id="example">
+                    <p style="color:green"><span class="layui-badge ok">OK</span>Mod 管理选择 Mod 后下方按钮显示异常</p>
+                    <p>&nbsp;&nbsp;&nbsp;- 此标题明了地标明了问题出现位置及问题具体情况。</p>
+                    <p style="color:green"><span class="layui-badge ok">OK</span>支持通过快捷键全选 Mod</p>
+                    <p>&nbsp;&nbsp;&nbsp;- 此标题清晰地表达了对于某内容的期望，并给出了可供参考的解决方案。</p>
+                    <p style="color:#FF5722"><span class="layui-badge">NO</span>游戏崩了</p>
+                    <p>&nbsp;&nbsp;&nbsp;- 此标题……概括性极强……对……就……挺强的……就</p>
+                    <p style="color:#FF5722"><span class="layui-badge">NO</span>5个建议</p>
+                    <p>&nbsp;&nbsp;&nbsp;- 请注意，不要一个 Issue 提交多个反馈内容，处理起来真的很头大。</p>
+                </div>
+				<span style="margin-top:2px">
+                <p><b>3.2 </b>完成上述步骤后，开始填写反馈内容正文部分，依照各部分提示清晰、明了、易懂地写出您的期望内容，如果可以，请写出可供参考的解决方案。</p>
+                <p><b>3.3 </b>正文填写完毕后，请按照提示上传相关附件，包括但不限于：（Bug）PCL 日志、游戏日志、游戏崩溃报告、HMCL 启动日志、问题截图、复现视频等；（优化/新功能）相关截图或视频。</p>
+                <h3><b>4. 后续处理及跟进工作</b></h3>
+                <p>若您的反馈被初步确认，Collaborator 将会为您的 Issue 添加 <span class="layui-badge clz">待处理</span>label，如信息不足，请依照请求尽快完成信息补充，根据内容复现及相关信息获取难易程度，您需要<b>尽可能在两周内完成信息补充</b>，否则您的 Issue 将被超时关闭。但不必但心，若 Issue 关闭后您完成了信息补充，我们会再次进行确认，无误后会重新打开该 Issue。</p>
+                <p>在沟通过程中，请尽可能避免连续评论或多层引用评论，如果需要修改或补充您的陈述，可以通过单击右上角的三个点，选择 Edit 来编辑您的评论或反馈。在沟通过程中请尽可能<b>保持态度平和，避免出现过激言论</b>，如您对 Issue 处理结果不满意，可以继续在下方进行信息补充。</p>
+                <hr>
+                <h2>最后，请注意，重复反馈、优化建议、新功能提案<b>无法</b>获得活跃橙。</h2>
+            </div>
+            <script>
+                var commandElem = document.getElementById('command');
+                commandElem.setAttribute('data-copy-text', '点击复制');
+                commandElem.addEventListener('click', function() {
+                    commandElem.setAttribute('data-copy-text', '已复制 ✔');
+                    navigator.clipboard.writeText('dir "{verindie}mods" /b | clip')
+                    setTimeout(function() {
+                        commandElem.setAttribute('data-copy-text', '点击复制');
+                    }, 1000);
+                });
+            </script>
+        </div>
+        
+        <script src="//cdn.staticfile.org/layui/2.8.17/layui.js"></script>
+        <script src="static/js/index.js"></script>
+    </body>
+</html>
