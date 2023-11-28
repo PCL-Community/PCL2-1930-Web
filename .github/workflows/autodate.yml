@@ -1,5 +1,8 @@
 name: Update Time
 
+permissions:
+  contents: write
+
 on:
   push:
     branches:
@@ -25,5 +28,5 @@ jobs:
         git config --global user.name "LingyunAwA"
         git config --global user.email "1913532130@qq.com"
         git add index.html
-        git commit -m "Update time: $(date +"%Y-%m-%d %H:%M:%S")"
+        git commit -m "[CI] Update time: $(date +"%Y-%m-%d %H:%M:%S")"
         git push
