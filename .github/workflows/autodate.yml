@@ -19,6 +19,11 @@ jobs:
     - name: Add write permission to index.html
       run: chmod +w index.html
 
+    - name: Set timezone
+      run: |
+        echo "Asia/Shanghai" | sudo tee /etc/timezone
+        sudo dpkg-reconfigure --frontend noninteractive tzdata
+
     - name: Update Time
       run: |
         sed -i "s#<p>更新时间：</p>#<p>更新时间：$(date +"%Y-%m-%d %H:%M:%S")</p>#" index.html
