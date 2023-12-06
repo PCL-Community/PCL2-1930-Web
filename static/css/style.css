@@ -64,7 +64,9 @@ div#launcher h1 img {
   display: flex;
   justify-content: center;
   width: max-content;
+  min-height: 22px;
   line-height: 20px;
+  max-height: 22px;
   padding: 0 7px;
   border-radius: 10px;
   font-size: 12px;
@@ -74,16 +76,31 @@ div#launcher h1 img {
   background-color: #3062CC2E;
   color: #8BA8E3;
   border-color: #8BA8E3;
+  min-width: 48px;
 }
 .label.clz {
   background-color: #3F3A1D;
   color: #FAC905;
   border-color: #FAC905;
+  min-width: 36px;
 }
-.label.other {
+.label.dsf {
   background-color: #36393E;
   color: #f0f0f0;
   border-color: #f0f0f0;
+  min-width: 36px;
+}
+.label.tc {
+  background-color: #36393E;
+  color: #f0f0f0;
+  border-color: #f0f0f0;
+  min-width: 24px;
+}
+.label.xysqbz {
+  background-color: #39383D;
+  color: #ffe6e6;
+  border-color: #ffe6e6;
+  min-width: 72px;
 }
 tip,
 a {
@@ -106,4 +123,10 @@ th,
 td {
   border: 1px solid #e0e0e0;
   padding: 14px 8px;
+}
+.flex {
+  display: flex;
+}
+.canselect {
+  user-select: text;
 }
