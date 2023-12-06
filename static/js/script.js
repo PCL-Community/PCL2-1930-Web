@@ -37,13 +37,16 @@ function setInhelpTrigger(){
     const inhelpElements = document.getElementsByClassName("inhelp");
     for (let inhelpElement of inhelpElements){
         let dataContent = inhelpElement.getAttribute("data-content");
-        inhelpElement.addEventListener("click", function(){
-            GmAlert.information(dataContent, 'info', {
-                timeout: 10000,
-                headerLeft: '帮助库路径提示',
-                hideClose: false,
-            })
-        });
+        let dataPass = discElement.getAttribute("data-pass");
+        if (dataPass != 'pass'){
+            inhelpElement.addEventListener("click", function(){
+                GmAlert.information(dataContent, 'info', {
+                    timeout: 10000,
+                    headerLeft: '帮助库路径提示',
+                    hideClose: false,
+                })
+            });
+        }
     }
 }
 
