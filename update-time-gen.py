@@ -6,9 +6,9 @@ with open('index.html', 'r', encoding='utf-8') as file:
     content = file.read()
 
 # 2. 查找并替换时间部分
-pattern = r'<p>更新时间：(.*?)</p>'
+pattern = r'最近更新时间：(.*?)'
 current_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-updated_content = re.sub(pattern, f'<p>更新时间：{current_time}</p>', content)
+updated_content = re.sub(pattern, f'最近更新时间：{current_time}', content)
 
 # 3. 将更新后的内容写回到 index.html 文件
 with open('index.html', 'w', encoding='utf-8') as file:

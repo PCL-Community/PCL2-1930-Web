@@ -24,6 +24,7 @@ div#content {
   margin-right: 200px;
   color: #e0e0e0;
 }
+/* index.html */
 div#minecraft h1 content {
   position: relative;
   top: -10px;
@@ -37,6 +38,61 @@ div#launcher h1 content {
 }
 div#launcher h1 img {
   width: 45px;
+}
+div#hardSearch h1 content {
+  position: relative;
+  top: -12px;
+}
+div#hardSearch h1 img {
+  width: 45px;
+}
+div#updateLog h5 {
+  padding-bottom: 7px;
+  border-bottom: 1px solid #696c6e;
+}
+div#footmark span {
+  color: #696C6E;
+  font-size: 12px;
+  padding: 5px 5px 5px 7px;
+}
+div#footmark span.focus {
+  color: #fff;
+  border-radius: 5px;
+  border: 2px solid #1F6FEB;
+  padding: 5px;
+}
+/* guide.html */
+div#content h3 {
+  font-size: 2em;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #696c6e;
+}
+div#content span#command {
+  padding: 2px 4px 4px 4px;
+  border-radius: 2px;
+  background-color: #505766;
+  cursor: pointer;
+}
+div#content div#titleExample {
+  margin-left: 40px;
+}
+div#content div#titleExample p {
+  margin: 16px 0 5px 0;
+}
+div#content div#titleExample .badge {
+  background-color: #ff5722;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  padding: 0 6px;
+  font-size: 12px;
+  text-align: center;
+  margin-right: 5px;
+  border-radius: 4px;
+  line-height: 18px;
+}
+div#content div#titleExample .badge.ok {
+  background-color: #4caf50;
 }
 /* Public */
 .refer {
@@ -65,9 +121,9 @@ div#launcher h1 img {
   justify-content: center;
   width: max-content;
   min-height: 22px;
-  line-height: 20px;
+  line-height: 22px;
   max-height: 22px;
-  padding: 0 7px;
+  padding: 0 5.8px 0 7px;
   border-radius: 10px;
   font-size: 12px;
   border: 1px solid;
