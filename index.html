@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>常见 & 难见反馈及问题列表</title>
+        <link rel="shortcut icon" href="static/img/pcl.ico" type="image/x-icon">
+        <link rel="stylesheet" href="static/css/style.css">
+    </head>
+    <body>
+        <div id="title">
+            <h1>【持续更新】常见&难检反馈及问题列表</h1><h2>#1930 Mirror</h2>
+        </div>
+        <div id="content">
+            <div id="information">
+                <h1>💬 前言</h1>
+                <span>
+                    由于 PCL2 仓库中反馈数量较多，因此在反馈者及 Collaborators 进行反馈搜索与查重时可能会搜索不到相关已提交的反馈。
+                    <br>
+                    此处 WForst-Breeze 从 Bilibili 更新日志评论区及 Github 仓库的 Issue、Discussions 中整理出了一份常见反馈列表，均为常见问题与高频重复反馈，
+                    <br>
+                    以方便诸位 Collaborators 同志们可以更方便地进行查找，同时在这份表格中也给出了相应的解释。
+                    <br>
+                    此站为 Github 社区中 #1930 帖的镜像版本，保持同步更新！
+                    <br><br><br>
+                    这个表格大概按照有关问题的重复频率和所属类别简单进行了排序，你可以使用 Ctrl + F 进行快速搜索
+                    <br><br>
+                    参考内容中：
+                    <span class="refer issue">Issue 帖子为蓝色背景</span>
+                    <span class="refer disc">Discussion 帖子为绿色背景</span>
+                    <span class="refer link">外部链接为黄色背景</span>
+                    <span class="refer inhelp">点击红色背景的将提示帮助库文件路径</span>
+                    <span class="refer more">点击紫色背景的将打开附文页面</span>
+                </span>
+            </div>
+            <br><br>
+            <div id="minecraft">
+                <h1><img src="static/img/minecraft.png"> <content>Minecraft 常见问题</content></h1>
+                <table>
+                    <colgroup>
+                        <col style="width: 20%;">
+                        <col style="width: 50%;">
+                        <col style="width: 30%;">
+                    </colgroup>
+                    <tr>
+                        <th>内容</th>
+                        <th>相关解释</th>
+                        <th>参考</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>1.16.4 及 1.16.5 离线模式无法进入多人游戏界面</b>
+                        </td>
+                        <td>
+                            <b>PCL 不会解决该问题，这超出了启动器功能范畴。</b>
+                            <br>
+                            <i>
+                                如仍需要使用多人游戏 <tip onclick="jumpToTip()">[1]</tip>，请自行断网启动游戏或安装
+                                <a href="https://github.com/MCTeamPotato/MultiOfflineFix">MultiOfflineFix</a>
+                                或
+                                <a href="https://github.com/ChickenPige0n/offline-multiplayer-fabric">Offline Multiplayer</a>
+                                模组。同时您可以参考
+                                <a href="https://github.com/Hex-Dragon/PCL2/discussions/1930#discussioncomment-6797858">此处的解决方案</a>
+                                或使用
+                                <a href="https://www.mcbbs.net/thread-1450892-1-1.html">Authlib 更新工具</a>
+                                来彻底解决此问题
+                            </i>
+                        </td>
+                        <td>
+                            <span class="refer inhelp" data-content="Minecraft > 多人游戏常见问题 > 多人游戏已被禁用，请检查你的Microsoft账户设置">PCL2 内置帮助库</span>
+                            <span class="refer disc" data-link="https://github.com/Hex-Dragon/PCL2/discussions/1930#discussioncomment-6805733">#1930</span>
+                            <span class="refer disc">#2003</span>
+                            <span class="refer issue">#2004</span>
+                            <span class="refer disc">#2017</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>游戏崩溃</td>
+                        <td>请依照附文步骤进行解决。</td>
+                        <td><span class="refer more">点击查看附文</span></td>
+                    </tr>
+                    <tr>
+                        <td>无法登录正版账户：你可能没有在 Minecraft 官网创建档案，或者没有购买 Minecraft。</td>
+                        <td>是 Mojang 的 Bug，与 PCL 无关。请前往 <a href="https://minecraft.net">Minecraft.net</a> 登录您的 Minecraft 账号后，稍等一会即可使用 PCL 正常进行登录。</td>
+                        <td>
+                            <span class="refer issue">#1264</span>
+                            <span class="refer issue">#1299</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>无法进入服务器</td>
+                        <td>非 PCL 问题，具体可能的解决方案见内置帮助库或前往相关论坛寻求帮助。</td>
+                        <td><span class="refer inhelp" data-content="Minecraft > 多人游戏常见问题">PCL2 内置帮助库</span></td>
+                    </tr>
+                    <tr>
+                        <td>中国移动中国联通网络下无法登录正版账户但网络速度良好</td>
+                        <td>
+                            原因为使用中国联通或中国移动网络下 api.minecraftservices.com 和二级域名为 mojang.com 的地址均被墙，请尝试使用中国电信网络或使用 VPN，具体信息见 #2738
+                        </td>
+                        <td>
+                            <span class="refer disc">#2738</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br><br>
+            <div id="launcher">
+                <h1><img src="static/img/pcl.ico"> <content>启动器常见问题</content></h1>
+                <table>
+                    <colgroup>
+                        <col style="width: 20%;">
+                        <col style="width: 50%;">
+                        <col style="width: 30%;">
+                    </colgroup>
+                    <tr>
+                        <th>内容</th>
+                        <th>相关解释</th>
+                        <th>参考</th>
+                    </tr>
+                    <tr>
+                        <td><b>联机！</b></td>
+                        <td>
+                            <b>“至于联机，因为网易还在继续代理中国版，我和 HMCL 的维护者都觉得还得谨慎一点……况且现在也有 Mod 支持联机了……咳咳。” ——龙腾猫跃</b>
+                            <br>
+                            BakaXL 现已于 2023 年 10 月 8 日将其部分服务与 Octo 章鱼网络进行对接，并对其可用性进行初步评估，待评估完成后，Octo 网络会全面对其他启动器开放 <tip onclick="jumpToTip()">[2]</tip>
+                        </td>
+                        <td>
+                            <span class="refer link" onclick="open2611updateLog()">2.6.11 更新日志</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>PCL 消失或报毒</td>
+                        <td>为 Microsoft Defender 和 360 等杀毒软件误报，请在 Windows 安全中心和杀毒软件中添加排除项或白名单，具体教程见 PCL 内置帮助库。</td>
+                        <td>
+                            <span class="refer inhelp" data-content="启动器 > 将 PCL 添加到 Windows 安全中心白名单" data-type="snapshot">PCL2 内置帮助库</span>
+                            <span class="refer issue">#56</span>
+                            <span class="refer issue" data-link="https://github.com/Hex-Dragon/PCL2/issues/666#issuecomment-1611534587">#666</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>支持启动器多语言</td>
+                        <td>
+                            <span class="label zhcl">暂缓处理</span>
+                        </td>
+                        <td>
+                            <span class="refer issue">#891</span>
+                            <span class="refer disc">#2567</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>增加导出整合包功能</td>
+                        <td>
+                            <span class="label zhcl">暂缓处理</span>
+                        </td>
+                        <td>
+                            <span class="refer issue">#98</span>
+                            <span class="refer disc">#100</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>支持启动基岩版及 Minecraft 其他衍生游戏</td>
+                        <td>
+                            <i>	“这玩意儿我根本启动不了！用官方启动器吧！告辞！” ——龙腾猫跃</i>
+                        </td>
+                        <td>
+                            <span class="refer issue">#81</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>支持更新 Mod</td>
+                        <td>
+                            <span class="label clz">处理中</span>
+                        </td>
+                        <td>
+                            <span class="refer issue">#102</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>支持更新整合包</td>
+                        <td>因新旧整合包可能存在兼容性等冲突问题，不会制作。</td>
+                        <td>
+                            <span class="refer issue">#2854</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>爱发电无法收到加群信息或更新密钥</td>
+                        <td>加群请<b>在爱发电</b>回复【加群】，更新密钥<b>在爱发电</b>获取请回复【更新+识别码】。如无法收到回复，很可能是你已经触发了人工回复，在等待人工回复的过程中无法使用命令。你如果只是想使用命令，可以发送【取消人工处理】。如仍旧没有回复，可以等待一会后再进行尝试。</td>
+                        <td>
+                            <span class="refer link" onclick="openShimoDoc()">石墨文档</span>
+                            <span class="refer disc">#1529</span>
+                            <span class="refer disc">#1867</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>使用“历史上的今天”主页时出现乱码</td>
+                        <td>为第三方主页问题，非 PCL 问题，请联系主页作者</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>使用预设自定义主页时出现乱码</td>
+                        <td>为第三方主页问题，非 PCL 问题，请联系主页作者</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>支持 MacOS、Linux、iOS、安卓等其他操作系统</td>
+                        <td>由于 PCL 的底层界面框架（WPF）无法跨系统，要兼容其他系统无异于完全重做，不会制作。</td>
+                        <td>
+                            <span class="refer issue">#54</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>添加皮肤库</td>
+                        <td>不会制作该功能</td>
+                        <td>
+                            <span class="refer issue">#343</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>支持离线披风</td>
+                        <td>技术上无法实现</td>
+                        <td>
+                            <span class="refer issue">#700</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>支持调整 Optifine 和第三方披风选项</td>
+                        <td>暂时不打算制作。</td>
+                        <td>
+                            <span class="refer issue">#2045</span>
+                            <span class="refer issue">#2065</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1.19.3+ 不支持自定义皮肤</td>
+                        <td>
+                            <span class="label zhcl">暂缓处理</span>
+                        </td>
+                        <td>
+                            <span class="refer issue">#1288</span>
+                            <span class="refer disc">#1596</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Minecraft 更新后 PCL 内未找到该最新版本</td>
+                        <td>请在 <b>设置-启动器-下载-版本列表获取</b> 选择 <b>尽量使用官方源</b>。</td>
+                        <td>
+                            <span class="refer disc">#1226</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>支持下载地图</td>
+                        <td>存在语言问题</td>
+                        <td>
+                            <span class="refer issue">#44</span>
+                            <span class="refer issue">#135</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>支持下载资源包（材质包 & 纹理包）</td>
+                        <td>
+                            <span class="label zhcl">暂缓处理</span>
+                        </td>
+                        <td>
+                            <span class="refer issue">#44</span>
+                            <span class="refer disc">#109</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>支持下载第三方服务端及插件</td>
+                        <td>PCL 是启动器，此功能超出了启动器的范畴</td>
+                        <td>
+                            <span class="refer issue">#108</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>支持光影下载</td>
+                        <td>
+                            <span class="label zhcl">暂缓处理</span>
+                        </td>
+                        <td>
+                            <span class="refer issue">#396</span>
+                            <span class="refer disc">#2768</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>支持数据包下载</td>
+                        <td>无可用 API</td>
+                        <td>
+                            <span class="refer issue">#871</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>引进新 Mod / 整合包下载源</td>
+                        <td>没有其他可用的国内的 API</td>
+                        <td>
+                            <span class="refer issue">#1658</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>添加、修改、更新、移除已安装版本的 OptiFine、Forge 等组件和模组加载器</td>
+                        <td>
+                            <span class="label zhcl">暂缓处理</span>
+                        </td>
+                        <td>
+                            <span class="refer issue">#220</span>
+                            <span class="refer disc">#227</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>允许管理存档、光影文件</td>
+                        <td>不会制作该功能。</td>
+                        <td>
+                            <span class="refer issue">#388</span>
+                            <span class="refer issue">#396</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>支持导出 Mod 列表</td>
+                        <td>
+                            <span class="label zhcl">暂缓处理</span>
+                        </td>
+                        <td>
+                            <span class="refer issue">#2586</span>
+                            <span class="refer disc">#2590</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>添加 Mod 收藏夹</td>
+                        <td>
+                            <span class="label zhcl">暂缓处理</span>
+                        </td>
+                        <td>
+                            <span class="refer issue">#487</span>
+                            <span class="refer disc">#1646</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>无法搜索到指定 Mod & Mod 搜索筛选选项异常 & Mod 搜索匹配版本错误 & Mod 详情页前置问题 等 Mod 搜索问题</td>
+                        <td>为 API 或 Mod 作者上传时的设置问题，PCL 无法解决。<tip onclick="jumpToTip()">[3]</tip></td>
+                        <td>
+                            <span class="refer issue">#2096</span>
+                            <span class="refer issue">#2190</span>
+                            <span class="refer issue">#2277</span>
+                            <span class="refer issue">#2352</span>
+                            等 Issues
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>兼容暗黑模式</td>
+                        <td><i>“这个基本上要重新设计所有界面，工作量太大了，我猜我都不会做……” ——龙腾猫跃</i></td>
+                        <td>
+                            <span class="refer issue">#131</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>支持安装 NeoForge</td>
+                        <td>
+                            <div style="display: flex;">
+                                <span class="label clz">处理中</span>
+                                &nbsp;&nbsp;
+                                <span class="label other">第三方</span>
+                                &nbsp;&nbsp;
+                                <a href="https://github.com/Hex-Dragon/PCL2/issues/2244#issuecomment-1687345863">现镜像源已上线</a>，等待 BMCLAPI 支持 Quilt 下载后一并制作。
+                            </div>
+                        </td>
+                        <td>
+                            <span class="refer issue">#2244</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>支持识别、安装 Quilt</td>
+                        <td>
+                            <div style="display: flex;">
+                                <span class="label clz">处理中</span>
+                                &nbsp;&nbsp;
+                                <span class="label other">第三方</span>
+                                &nbsp;&nbsp;
+                                等待 BMCLAPI 支持
+                            </div>
+                        </td>
+                        <td>
+                            <span class="refer issue">#48</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mod 管理允许选择使用多种排序方式</td>
+                        <td>
+                            <span class="label zhcl">暂缓处理</span>
+                        </td>
+                        <td>
+                            <span class="refer issue">#2698</span>
+                            <span class="refer disc">#2700</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

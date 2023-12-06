@@ -1,0 +1,109 @@
+body {
+  background-color: #282C34;
+  user-select: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+div#title {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+div#title h1 {
+  color: #e0e0e0;
+}
+div#title h2 {
+  margin-left: 10px;
+  color: #696c6e;
+  font-weight: 400;
+  font-style: italic;
+}
+div#content {
+  margin-left: 200px;
+  margin-right: 200px;
+  color: #e0e0e0;
+}
+div#minecraft h1 content {
+  position: relative;
+  top: -10px;
+}
+div#minecraft h1 img {
+  width: 45px;
+}
+div#launcher h1 content {
+  position: relative;
+  top: -12px;
+}
+div#launcher h1 img {
+  width: 45px;
+}
+/* Public */
+.refer {
+  padding: 3px;
+  cursor: pointer;
+  border-radius: 1px;
+  color: #e0e0e0;
+}
+.refer.issue {
+  background-color: rgba(66, 164, 245, 0.348);
+}
+.refer.disc {
+  background-color: rgba(0, 150, 135, 0.478);
+}
+.refer.link {
+  background-color: rgba(255, 191, 0, 0.478);
+}
+.refer.inhelp {
+  background-color: rgba(252, 30, 30, 0.408);
+}
+.refer.more {
+  background-color: rgba(165, 71, 241, 0.302);
+}
+.label {
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  line-height: 20px;
+  padding: 0 7px;
+  border-radius: 10px;
+  font-size: 12px;
+  border: 1px solid;
+}
+.label.zhcl {
+  background-color: #3062CC2E;
+  color: #8BA8E3;
+  border-color: #8BA8E3;
+}
+.label.clz {
+  background-color: #3F3A1D;
+  color: #FAC905;
+  border-color: #FAC905;
+}
+.label.other {
+  background-color: #36393E;
+  color: #f0f0f0;
+  border-color: #f0f0f0;
+}
+tip,
+a {
+  color: #2f81f7;
+  cursor: pointer;
+}
+tip:hover,
+a:hover {
+  color: #206FD4;
+}
+tip {
+  position: relative;
+  top: -7px;
+  font-size: 12px;
+}
+table {
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid #e0e0e0;
+  padding: 14px 8px;
+}
