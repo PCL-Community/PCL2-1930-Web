@@ -1,7 +1,7 @@
 <div align="center">
   
   # 本期更新内容
-  ###### （更新时间：2023-12-06 17:28:51）
+  #### （更新时间：2023-12-06 17:28:51）
 
 1：完成 [#2](https://github.com/lingyunawa/pcl-doc/issues/2) 的文案同步
 
