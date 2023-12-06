@@ -50,12 +50,13 @@ div#updateLog h5 {
   padding-bottom: 7px;
   border-bottom: 1px solid #696c6e;
 }
-div#footmark span {
+div#footmark div {
   color: #696C6E;
   font-size: 12px;
   padding: 5px 5px 5px 7px;
+  margin: 0;
 }
-div#footmark span.focus {
+div#footmark div.focus {
   color: #fff;
   border-radius: 5px;
   border: 2px solid #1F6FEB;
@@ -118,7 +119,7 @@ div#content div#titleExample .badge.ok {
 }
 .label {
   display: flex;
-  justify-content: center;
+  justify-self: center;
   width: max-content;
   min-height: 22px;
   line-height: 22px;
@@ -179,9 +180,16 @@ th,
 td {
   border: 1px solid #e0e0e0;
   padding: 14px 8px;
+  text-align: center;
+}
+th.center,
+td.center {
+  display: grid;
+  border: none;
 }
 .flex {
   display: flex;
+  justify-content: center;
 }
 .canselect {
   user-select: text;

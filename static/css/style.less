@@ -72,10 +72,11 @@ div#updateLog{
     }
 }
 
-div#footmark span{
+div#footmark div{
     color: #696C6E;
     font-size: 12px;
     padding: 5px 5px 5px 7px;
+    margin: 0;
     &.focus{
         color: #fff;
         border-radius: 5px;
@@ -135,7 +136,7 @@ div#content{
 // label
 .label{
     display: flex;
-    justify-content: center;
+    justify-self: center;
     width: max-content;
     min-height: 22px;
     line-height: 22px;
@@ -173,8 +174,10 @@ table {
 th, td {
     border: 1px solid #e0e0e0;
     padding: 14px 8px;
+    text-align: center;
+    &.center{ display:grid; border: none; }
 }
 
 // 样式覆盖
-.flex{display:flex}
+.flex{display:flex; justify-content:center;}
 .canselect{user-select: text} 
