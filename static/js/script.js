@@ -37,7 +37,7 @@ function setInhelpTrigger(){
     const inhelpElements = document.getElementsByClassName("inhelp");
     for (let inhelpElement of inhelpElements){
         let dataContent = inhelpElement.getAttribute("data-content");
-        let dataPass = discElement.getAttribute("data-pass");
+        let dataPass = inhelpElement.getAttribute("data-pass");
         if (dataPass != 'pass'){
             inhelpElement.addEventListener("click", function(){
                 GmAlert.information(dataContent, 'info', {
