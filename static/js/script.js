@@ -54,6 +54,7 @@ function setInhelpTrigger(){
 function openGuide(){ window.open('/guide.html') }
 function open2611updateLog(){ window.open('https://www.bilibili.com/read/cv28121157/') }
 function openShimoDoc(){ window.open('https://shimo.im/docs/qKPttVvXKqPD8YDC') }
+function open3rdPartyPage(){ window.open('https://github.com/Hex-Dragon/PCL2/issues?q=label%3A%E7%AC%AC%E4%B8%89%E6%96%B9+is%3Aclosed') }
 
 // FootMarks
 function jumpToTip(highLightElementId){ 
@@ -89,7 +90,7 @@ function copyCommand(){
         timeout: 2000,
     })['$el']
     element.style.color = '#E0E0E0'
-}   
+}
 
 // 初始化
 window.onload = function(){

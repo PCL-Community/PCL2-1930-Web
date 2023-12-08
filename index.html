@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>常见 & 难见反馈及问题列表</title>
+        <title>常见 & 难检反馈及问题列表</title>
         <link rel="shortcut icon" href="static/img/pcl.ico" type="image/x-icon">
         <link rel="stylesheet" href="GmAlert/gmalert.min.css">
         <link rel="stylesheet" href="static/css/style.css">
@@ -25,7 +25,7 @@
                     <br>
                     此站为 Github 社区中 #1930 帖的镜像版本，保持同步更新！
                     <br><br><br>
-                    这个表格大概按照有关问题的重复频率和所属类别简单进行了排序，你可以使用 Ctrl + F 进行快速搜索
+                    这个表格大概按照有关问题的重复频率和所属类别简单进行了排序，您可以使用 Ctrl + F 进行快速搜索
                     <br><br>
                     参考内容中：
                     <span class="refer issue" data-pass="pass">Issue 帖子为蓝色背景</span>
@@ -70,7 +70,7 @@
                             </i>
                         </td>
                         <td>
-                            <span class="refer inhelp" data-content="Minecraft > 多人游戏常见问题 > 多人游戏已被禁用，请检查你的Microsoft账户设置">PCL2 内置帮助库</span>
+                            <span class="refer inhelp" data-content="Minecraft > 多人游戏常见问题 > 多人游戏已被禁用，请检查您的Microsoft账户设置">PCL2 内置帮助库</span>
                             <span class="refer disc" data-link="https://github.com/Hex-Dragon/PCL2/discussions/1930#discussioncomment-6805733">#1930</span>
                             <span class="refer disc">#2003</span>
                             <span class="refer issue">#2004</span>
@@ -83,7 +83,7 @@
                         <td><span class="refer more" onclick="openGuide()">点击查看附文</span></td>
                     </tr>
                     <tr>
-                        <td>无法登录正版账户：<br>你可能没有在 Minecraft 官网创建档案，或者没有购买 Minecraft。</td>
+                        <td>无法登录正版账户：<br>您可能没有在 Minecraft 官网创建档案，或者没有购买 Minecraft。</td>
                         <td>是 Mojang 的 Bug，与 PCL 无关。请前往 <a href="https://minecraft.net">Minecraft.net</a> 登录您的 Minecraft 账号后，稍等一会即可使用 PCL 正常进行登录。</td>
                         <td>
                             <span class="refer issue">#1264</span>
@@ -188,7 +188,7 @@
                     </tr>
                     <tr>
                         <td>爱发电无法收到加群信息或更新密钥</td>
-                        <td>加群请<b>在爱发电</b>回复【加群】，更新密钥<b>在爱发电</b>获取请回复【更新+识别码】。<br>如无法收到回复，很可能是你已经触发了人工回复，在等待人工回复的过程中无法使用命令。你如果只是想使用命令，可以发送【取消人工处理】。如仍旧没有回复，可以等待一会后再进行尝试。</td>
+                        <td>加群请<b>在爱发电</b>回复【加群】，更新密钥<b>在爱发电</b>获取请回复【更新+识别码】。<br>如无法收到回复，很可能是您已经触发了人工回复，在等待人工回复的过程中无法使用命令。您如果只是想使用命令，可以发送【取消人工处理】。如仍旧没有回复，可以等待一会后再进行尝试。</td>
                         <td>
                             <span class="refer link" onclick="openShimoDoc()">石墨文档</span>
                             <span class="refer disc">#1529</span>
@@ -447,7 +447,7 @@
                         <td>
                             备注：此类 Issue 大概率会因为必要性及优先级较低被拒绝，<br>但不排除个别会被采纳，仅作参考。
                             <br><br>
-                            <i class="canselect">搜索关键词：毛玻璃、背景、透明、标题、隐藏主题、音乐、图标、暗黑、RGB、渐变。</i>
+                            <i class="canselect">搜索关键词：毛玻璃、背景、透明、标题、隐藏主题、音乐、图标、暗黑、RGB、渐变、图标。</i>
                         </td>
                         <td>
                             <span class="refer issue">#131</span>
@@ -575,6 +575,37 @@
                         <th>内容</th>
                         <th>相关解释</th>
                         <th>参考</th>
+                    </tr>
+                    <tr>
+                        <td>因第三方软件或作者引起的问题</td>
+                        <td>PCL 不会处理第三方造成的问题。</td>
+                        <td>
+                            <div class="flex" style="position:relative; left: 20px;">
+                                Label：
+                                <span class="label dsf" style="line-height: 20.5px;position: relative;top:-1px" onclick="open3rdPartyPage()">第三方</span>
+                                <span style="font-size:12px; align-self:flex-end; position:relative; bottom:2px; color:#777777;">（点击前往）</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>因系统问题无法打开 PCL</td>
+                        <td>
+                            系统原因，PCL 无法解决。
+                            <br>
+                            <i class="canselect">关键词：.Net、支持库、程序出现未知错误、显卡驱动、闪退、系统不完整</i>
+                        </td>
+                        <td>
+                            <span class="refer issue">#2146</span>
+                            <span class="refer issue">#2485</span>
+                            <span class="refer issue">#2580</span>
+                            <span class="refer issue">#2676</span>
+                            <span class="refer issue">#2729</span>
+                            <span class="refer issue">#2751</span>
+                            <br><br>
+                            <span class="refer issue">#2755</span>
+                            <span class="refer issue">#2849</span>
+                            等 Issues
+                        </td>
                     </tr>
                     <tr>
                         <td>上架微软商店</td>
