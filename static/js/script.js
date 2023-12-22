@@ -55,6 +55,7 @@ function openGuide(){ window.open('/guide.html') }
 function open2611updateLog(){ window.open('https://www.bilibili.com/read/cv28121157/') }
 function openShimoDoc(){ window.open('https://shimo.im/docs/qKPttVvXKqPD8YDC') }
 function open3rdPartyPage(){ window.open('https://github.com/Hex-Dragon/PCL2/issues?q=label%3A%E7%AC%AC%E4%B8%89%E6%96%B9+is%3Aclosed') }
+function openWikiAnc(){ window.open('https://zh.minecraft.wiki/w/Minecraft_Wiki:%E8%BF%81%E7%A7%BB%E9%80%9A%E7%9F%A5?variant=zh-cn#%E6%88%91%E4%BB%AC%E9%9C%80%E8%A6%81%E4%BD%A0%E7%9A%84%E5%B8%AE%E5%8A%A9%EF%BC%81') }
 
 // FootMarks
 function jumpToTip(highLightElementId){ 
