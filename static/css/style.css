@@ -133,19 +133,19 @@ div#content div#titleExample .badge.ok {
   background-color: #3062CC2E;
   color: #8BA8E3;
   border-color: #8BA8E3;
-  min-width: 48px;
+  min-width: 38px;
 }
 .label.clz {
   background-color: #3F3A1D;
   color: #FAC905;
   border-color: #FAC905;
-  min-width: 36px;
+  min-width: 38px;
 }
 .label.dsf {
   background-color: #36393E;
   color: #f0f0f0;
   border-color: #f0f0f0;
-  min-width: 36px;
+  min-width: 38px;
 }
 .label.tc {
   background-color: #36393E;
