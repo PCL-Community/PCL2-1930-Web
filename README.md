@@ -2,8 +2,8 @@
 
 # 本期更新内容
 
-#### （更新时间：2023-12-23 22:45:05）
+#### （更新时间：2024-01-01 02:21:27）
 
-1：完成 [#4](https://github.com/lingyunawa/pcl-doc/issues/4) [#5](https://github.com/lingyunawa/pcl-doc/issues/5) 文案同步
+1：完成 [#6](https://github.com/lingyunawa/pcl-doc/issues/6) 文案同步
 
 </div>
