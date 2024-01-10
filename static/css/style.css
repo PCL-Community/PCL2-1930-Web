@@ -191,6 +191,10 @@ th.border,
 td.border {
   border-top: 1px solid #e0e0e0;
 }
+th.border-bottom,
+td.border-bottom {
+  border-bottom: 1px solid #e0e0e0;
+}
 .flex {
   display: flex;
   justify-content: center;
