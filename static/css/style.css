@@ -46,6 +46,48 @@ div#hardSearch h1 content {
 div#hardSearch h1 img {
   width: 45px;
 }
+div#yszy h1 content {
+  position: relative;
+  top: -12px;
+}
+div#yszy h1 img {
+  width: 45px;
+}
+div#yszy div.important-hint {
+  padding-left: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+div#yszy div.important-hint p.markdown-alert-title {
+  fill: #8957e5;
+  color: #8957e5;
+}
+div#yszy div.important-hint p.markdown-alert-title span {
+  position: relative;
+  top: -4px;
+  left: 5px;
+}
+div#yszy div.important-hint::before {
+  content: '';
+  background-color: #8957e5;
+  width: 4px;
+  height: 70px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -5px;
+}
+div#yszy a.ghAt {
+  color: #e0e0e0;
+  font-weight: 700;
+  text-decoration: none;
+}
+div#yszy a.ghAt:hover {
+  opacity: 0.9;
+}
+div#yszy a.ghAt:active {
+  opacity: 0.8;
+}
 div#updateLog h5 {
   padding-bottom: 7px;
   border-bottom: 1px solid #696c6e;

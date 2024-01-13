@@ -65,6 +65,53 @@ div#hardSearch{
     }
 }
 
+div#yszy{
+    h1{
+        content{
+            position: relative;
+            top: -12px;
+        }
+        img{
+            width: 45px;
+        }
+    }
+    div.important-hint{
+        padding-left: 20px; 
+        margin-bottom: 20px;
+        position: relative;
+        p.markdown-alert-title{
+            fill: #8957e5;
+            color: #8957e5;
+            span{
+                position: relative;
+                top: -4px;
+                left: 5px;
+            }
+        }
+        &::before{
+            content: '';
+            background-color: #8957e5;
+            width: 4px;
+            height: 70px;
+            display: block; 
+            position: absolute;
+            left: 0;
+            top: -5px;
+        }
+    }
+    a.ghAt{
+        color: #e0e0e0;
+        font-weight: 700;
+        text-decoration: none;
+        &:hover{
+            opacity: 0.9;
+        }
+        &:active{
+            opacity: 0.8;
+        }
+    }
+}
+
 div#updateLog{
     h5{
         padding-bottom: 7px;
@@ -126,11 +173,11 @@ div#content{
     cursor: pointer;
     border-radius: 1px;
     color: #e0e0e0;
-    &.issue { background-color: rgba(66, 164, 245, 0.348); }
-    &.disc  { background-color: rgba(0, 150, 135, 0.478);  }
-    &.link  { background-color: rgba(255, 191, 0, 0.478); }
-    &.inhelp{ background-color: rgba(252, 30, 30, 0.408);  }
-    &.more  { background-color: rgba(165, 71, 241, 0.302); }
+    &.issue  { background-color: rgba(66, 164, 245, 0.348); }
+    &.disc   { background-color: rgba(0, 150, 135, 0.478);  }
+    &.link   { background-color: rgba(255, 191, 0, 0.478); }
+    &.inhelp { background-color: rgba(252, 30, 30, 0.408);  }
+    &.more   { background-color: rgba(165, 71, 241, 0.302); }
 }
 
 // label
@@ -145,11 +192,11 @@ div#content{
     border-radius: 10px;
     font-size: 12px;
     border: 1px solid;
-    &.tpz  { background-color: #3062CC2E; color: #8BA8E3; border-color: #8BA8E3; min-width: 38px; }
-    &.clz   { background-color: #3F3A1D;   color: #FAC905; border-color: #FAC905; min-width: 38px; }
-    &.dsf   { background-color: #36393E;   color: #f0f0f0; border-color: #f0f0f0; min-width: 38px; }
-    &.tc    { background-color: #36393E;   color: #f0f0f0; border-color: #f0f0f0; min-width: 24px; }
-    &.xysqbz{ background-color: #39383D;   color: #ffe6e6; border-color: #ffe6e6; min-width: 72px; }
+    &.tpz    { background-color: #3062CC2E; color: #8BA8E3; border-color: #8BA8E3; min-width: 38px; }
+    &.clz    { background-color: #3F3A1D;   color: #FAC905; border-color: #FAC905; min-width: 38px; }
+    &.dsf    { background-color: #36393E;   color: #f0f0f0; border-color: #f0f0f0; min-width: 38px; }
+    &.tc     { background-color: #36393E;   color: #f0f0f0; border-color: #f0f0f0; min-width: 24px; }
+    &.xysqbz { background-color: #39383D;   color: #ffe6e6; border-color: #ffe6e6; min-width: 72px; }
 }
 
 // 脚注
