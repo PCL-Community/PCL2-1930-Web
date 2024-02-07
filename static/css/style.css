@@ -110,7 +110,7 @@ div#content h3 {
   padding-bottom: 7px;
   border-bottom: 1px solid #696c6e;
 }
-div#content span#command {
+div#content span.command {
   padding: 2px 4px 4px 4px;
   border-radius: 2px;
   background-color: #2b2f36;
