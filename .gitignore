@@ -1,2 +1,5 @@
 # 旧版备份
 /backups
+
+# VSCode Config
+.vscode/
