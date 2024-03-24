@@ -772,8 +772,15 @@
                         <td><span class="refer issue">#3143</span></td>
                     </tr>
                     <td>无法更新 PCL</td>
-                        <td>
-                            请按下 Win+X ，点击 Windows PowerShell（管理员），并输入如下命令 [netsh interface ip set dns  "适配器名称" static 8.8.8.8] <tip onclick="jumpToTip(5)">[5]</tip> 如果您使用的是 <b>有线连接（网线）</b>，请将 <b>适配器名称</b> 替换为 <b>以太网</b>，如果您使用的是 <b>WiFi</b>，请将 <b>适配器名称</b> 替换为 <b>WLAN</b>，然后输入 [nslookup raw.githubusercontent.com],确认 <b>非权威应答</b> 的 <b>Addresses</b> 项的值不为 0.0.0.0、127.0.0.1、:::、:::1。
+                        <td id="tip5">
+                            请按下 Win+X ，点击 Windows PowerShell（管理员），并输入如下命令 
+                            <p></p>
+                            <span class="command" onclick="copyCommand(1)">netsh interface ip set dns  "适配器名称" static 8.8.8.8</span> <tip onclick="jumpToTip(5)">[5]</tip><span style="font-size: 12px; display: inline-block; transform: translateY(-6px);">，可点击复制</span>
+                            <p></p>
+                            如果您使用的是 <b>有线连接（网线）</b>，请将 <b>适配器名称</b> 替换为 <b>以太网</b>，如果您使用的是 <b>WiFi</b>，请将 <b>适配器名称</b> 替换为 <b>WLAN</b>，然后输入
+                            <p></p>
+                            <span class="command" onclick="copyCommand(2)">nslookup raw.githubusercontent.com</span> <span style="font-size: 12px; display: inline-block; transform: translateY(-6px);">可点击复制</span>
+                            <p></p>确认 <b>非权威应答</b> 的 <b>Addresses</b> 项的值不为 0.0.0.0、127.0.0.1、:::、:::1。
                         </td> 
                         <td>
                             <span class="refer issue">#3505</span>
@@ -787,16 +794,16 @@
                         <td>
                             <span class="refer issue">#3236</span>
                         </td>   
-                     </tr>   
-                     <tr>
-                         <td>日志出现 not xxx in java.library.path</td>
-                         <td>
-                             Java 不完整，非 PCL 问题，如果可能，请您自行准备 Java 而不是使用自动补全 Java 功能。
-                         </td>  
-                         <td>
+                    </tr>   
+                    <tr>
+                        <td>日志出现 not xxx in java.library.path</td>
+                        <td>
+                            Java 不完整，非 PCL 问题，如果可能，请您自行准备 Java 而不是使用自动补全 Java 功能。
+                        </td>  
+                        <td>
                             <span class="refer issue">#3496</span>
-                         </td>    
-                     </tr>    
+                        </td>    
+                    </tr>    
                 </table>
             </div>
             <div id="yszy">
@@ -879,7 +886,7 @@
             </div>
             <br>
             <div id="updateLog">
-                <h5>本页作者 @JingHai-Lingyun，有问题/更新不及时请到 <a href="https://github.com/lingyunawa/pcl-doc/issues">Github</a> 提交反馈&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最近更新时间：2024-03-13 21:46:51</h5>
+                <h5>本页作者 @JingHai-Lingyun，有问题/更新不及时请到 <a href="https://github.com/lingyunawa/pcl-doc/issues">Github</a> 提交反馈&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最近更新时间：2024-03-25 03:43:22</h5>
             </div>
             <div id="footmark">
                 <div id="footmark1">
@@ -900,6 +907,7 @@
                 <div id="footmark4">
                     4. 由于 .minecraft/mods 文件夹下创建的子文件夹内的 Mod 不被模组加载器（此为如 Forge、Fabric 类模组加载器行为，非 PCL 行为）加载，因此在新版本中移除了此功能。
                     <tip style="top: -2px" onclick="jumpToRaw(4)">[↩]</tip>
+                </div>
                 <br>
                 <div id="footmark5">
                     5. 复制过程中，除适配器名称需要替换外，其他内容不可替换；除适配器名称外，其他部分不要包含中文字符。

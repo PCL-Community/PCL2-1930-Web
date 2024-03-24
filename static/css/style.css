@@ -1,5 +1,5 @@
 body {
-  background-color: #0D1117;
+  background-color: #0d1117;
   user-select: none;
 }
 ::-webkit-scrollbar {
@@ -68,7 +68,7 @@ div#yszy div.important-hint p.markdown-alert-title span {
   left: 5px;
 }
 div#yszy div.important-hint::before {
-  content: '';
+  content: "";
   background-color: #8957e5;
   width: 4px;
   height: 70px;
@@ -93,7 +93,7 @@ div#updateLog h5 {
   border-bottom: 1px solid #696c6e;
 }
 div#footmark div {
-  color: #696C6E;
+  color: #696c6e;
   font-size: 12px;
   padding: 5px 5px 5px 7px;
   margin: 0;
@@ -101,7 +101,7 @@ div#footmark div {
 div#footmark div.focus {
   color: #fff;
   border-radius: 5px;
-  border: 2px solid #1F6FEB;
+  border: 2px solid #1f6feb;
   padding: 5px;
 }
 /* guide.html */
@@ -172,31 +172,31 @@ div#content div#titleExample .badge.ok {
   border: 1px solid;
 }
 .label.tpz {
-  background-color: #3062CC2E;
-  color: #8BA8E3;
-  border-color: #8BA8E3;
+  background-color: #3062cc2e;
+  color: #8ba8e3;
+  border-color: #8ba8e3;
   min-width: 38px;
 }
 .label.clz {
-  background-color: #3F3A1D;
-  color: #FAC905;
-  border-color: #FAC905;
+  background-color: #3f3a1d;
+  color: #fac905;
+  border-color: #fac905;
   min-width: 38px;
 }
 .label.dsf {
-  background-color: #36393E;
+  background-color: #36393e;
   color: #f0f0f0;
   border-color: #f0f0f0;
   min-width: 38px;
 }
 .label.tc {
-  background-color: #36393E;
+  background-color: #36393e;
   color: #f0f0f0;
   border-color: #f0f0f0;
   min-width: 24px;
 }
 .label.xysqbz {
-  background-color: #39383D;
+  background-color: #39383d;
   color: #ffe6e6;
   border-color: #ffe6e6;
   min-width: 72px;
@@ -208,7 +208,7 @@ a {
 }
 tip:hover,
 a:hover {
-  color: #206FD4;
+  color: #206fd4;
 }
 tip {
   position: relative;
