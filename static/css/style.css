@@ -77,15 +77,17 @@ div#yszy div.important-hint::before {
   left: 0;
   top: -5px;
 }
-div#yszy a.ghAt {
+a.ghAt {
   color: #e0e0e0;
   font-weight: 700;
   text-decoration: none;
 }
-div#yszy a.ghAt:hover {
+a.ghAt:hover {
+  color: #e0e0e0;
   opacity: 0.9;
 }
-div#yszy a.ghAt:active {
+a.ghAt:active {
+  color: #e0e0e0;
   opacity: 0.8;
 }
 div#updateLog h5 {

@@ -44,7 +44,7 @@ function setDiscTrigger() {
     }
 }
 
-// Set All In-Help Element's Trigger
+// Set all In-Help Element's Trigger
 function setInhelpTrigger() {
     const inhelpElements = document.getElementsByClassName("inhelp");
     for (let inhelpElement of inhelpElements) {
@@ -62,11 +62,24 @@ function setInhelpTrigger() {
     }
 }
 
-// Set All Link&Content same link element's href
+// Set all Link&Content same link element's href
 function setLinkContentSameLink() {
     const linkElements = document.querySelectorAll("a.copyLink");
     for (let linkElement of linkElements) {
         linkElement.setAttribute("href", linkElement.innerHTML.toString());
+    }
+}
+
+// Set all ghAt element's href
+function setGhAtLink() {
+    const ghAtElements = document.querySelectorAll("a.ghAt");
+    for (let ghAtElement of ghAtElements) {
+        ghAtElement.setAttribute(
+            "href",
+            "https://github.com/" +
+                ghAtElement.innerHTML.toString().substring(1)
+        );
+        ghAtElement.setAttribute("target", "_blank");
     }
 }
 
@@ -125,7 +138,7 @@ function copyCommand(index) {
     const map = {
         0: 'dir "{verindie}mods" /b | clip',
         1: 'netsh interface ip set dns  "适配器名称" static 8.8.8.8',
-        2: 'nslookup raw.githubusercontent.com'
+        2: "nslookup raw.githubusercontent.com",
     };
     if (!(index in map)) return;
     try {
@@ -150,6 +163,7 @@ window.onload = function () {
     setInhelpTrigger();
     setTipUnfocusTrigger();
     setLinkContentSameLink();
+    setGhAtLink();
     console.log(`     ____     ____       __           ___       __ __         _        __         __        __     
     /\\  _\`\\  /\\  _\`\\    /\\ \\        /'___\`\\    _\\ \\\\ \\__    /' \\     /'_ \`\\     /'__\`\\    /'__\`\\   
     \\ \\ \\L\\ \\\\ \\ \\/\\_\\  \\ \\ \\      /\\_\\ /\\ \\  /\\__  _  _\\  /\\_, \\   /\\ \\L\\ \\   /\\_\\L\\ \\  /\\ \\/\\ \\  
