@@ -3,3 +3,8 @@
 
 # VSCode Config
 .vscode/
+
+# Dev Products
+env/
+temp/
+docGenerator.py
