@@ -152,6 +152,9 @@ div#content div#titleExample .badge.ok {
 .refer.disc {
   background-color: rgba(0, 150, 135, 0.478);
 }
+.refer.pr {
+  background-color: rgba(255, 85, 0, 0.478);
+}
 .refer.link {
   background-color: rgba(255, 191, 0, 0.478);
 }

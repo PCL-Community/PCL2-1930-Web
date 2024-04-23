@@ -28,12 +28,15 @@
                     这个表格大概按照有关问题的重复频率和所属类别简单进行了排序，您可以使用 Ctrl + F 进行快速搜索
                     <br><br>
                     参考内容中：
+                    <br><br>
                     <span class="refer issue" data-pass="pass">Issue 帖子为蓝色背景</span>
                     <span class="refer disc" data-pass="pass">Discussion 帖子为绿色背景</span>
+                    <span class="refer pr" data-pass="pass">Pull Request 帖子为橙色背景</span>
                     <span class="refer link" data-pass="pass">外部链接为黄色背景</span>
                     <span class="refer inhelp" data-pass="pass">点击红色背景的将提示帮助库文件路径</span>
                     <span class="refer more" data-pass="pass">点击紫色背景的将打开附文页面</span>
-                    ，均可直接点击！
+                    <br><br>
+                    均可直接点击！
                 </span>
             </div>
             <br><br>
@@ -123,6 +126,17 @@
                         </td>
                         <td>
                             <span class="refer disc">#2738</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>整合包中安装了 OptiFine 导致游戏无法正常加载</td>
+                        <td>
+                            此为 OptiFine 过于激进的优化手段所致。OptiFine 和模组加载器之间存在严重的兼容性问题，请考虑只安装 OptiFine 或只安装模组加载器，亦或是使用其他 Mod 替代 OptiFine。
+                        </td>
+                        <td>
+                            <span class="refer issue">#3258</span>
+                            <span class="refer issue">#3566</span>
+                            <span class="refer issue">#3573</span>
                         </td>
                     </tr>
                 </table>
@@ -332,6 +346,20 @@
                         <td>
                             <span class="refer issue">#3003</span>
                             <span class="refer disc">#3004</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>安装整合包时支持修改模组加载器版本</td>
+                        <td>修改模组加载器版本可能会导致严重的兼容性问题，请联系整合包作者解决，PCL 不会支持该功能。</td>
+                        <td>
+                            <span class="refer issue">#3568</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>将 GitHub 链接替换为镜像站</td>
+                        <td><i>“使用代理源并不安全也不稳定，暂不考虑……” ——龙腾猫跃</i></td>
+                        <td>
+                            <span class="refer pr">#2879</span>
                         </td>
                     </tr>
                     <tr>
