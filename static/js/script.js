@@ -44,6 +44,29 @@ function setDiscTrigger() {
     }
 }
 
+// Set All PR Element's Trigger
+function setDiscTrigger() {
+    const discElements = document.getElementsByClassName("pr");
+    for (let discElement of discElements) {
+        let dataLink = discElement.getAttribute("data-link");
+        let dataPass = discElement.getAttribute("data-pass");
+        let linkID = discElement.innerHTML.substring(1);
+        if (dataPass != "pass") {
+            if (dataLink != null) {
+                discElement.addEventListener("click", function () {
+                    window.open(dataLink);
+                });
+            } else {
+                discElement.addEventListener("click", function () {
+                    window.open(
+                        `https://github.com/Hex-Dragon/PCL2/pull/${linkID}`
+                    );
+                });
+            }
+        }
+    }
+}
+
 // Set all In-Help Element's Trigger
 function setInhelpTrigger() {
     const inhelpElements = document.getElementsByClassName("inhelp");
