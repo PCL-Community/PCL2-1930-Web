@@ -195,6 +195,6 @@ window.onload = function () {
        \\ \\_\\    \\ \\____/   \\ \\____/  /\\______/  \\/_/\\_\\\\_\\/    \\ \\_\\      \\ \\_\\  \\ \\____/  \\ \\____/
         \\/_/     \\/___/     \\/___/   \\/_____/      \\/_//_/      \\/_/       \\/_/   \\/___/    \\/___/ `);
     console.log(
-        "Based on WForst-Breeze/PCL2-1930 (https://github.com/WForst-Breeze/PCL2-1930/), Licensed for LingyunAwA to make this page"
+        "Based on WForst-Breeze/PCL2-1930 (https://github.com/PCL-Community/PCL2-1930/), Licensed for LingyunAwA to make this page"
     );
 };
