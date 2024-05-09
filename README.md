@@ -10,6 +10,8 @@
 
 3：合并 PR #26
 
+4: 合并 PR #27
+
 4：文本更新，（Commit：c9a60a3）
 
 感谢 @wuliaodexiaoluo 的贡献
