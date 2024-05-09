@@ -288,7 +288,7 @@
                     <tr>
                         <td>1.19.3+ 及以上版本不支持自定义皮肤</td>
                         <td class="center">
-                            <span class="label tpz">投票中</span>
+                            <span class="label tpz" style="position: relative; top: 8px">投票中</span>
                         </td>
                         <td>
                             <span class="refer issue">#1288</span>
@@ -357,8 +357,9 @@
                     </tr>
                     <tr>
                         <td>支持下载资源包<br>（材质包 & 纹理包）</td>
-                        <td class="center">
-                            <span class="label tpz" style="position: relative; top: 8px">投票中</span>
+                        <td class="center border-bottom">
+                            <br>
+                            <span class="label tpz" style="position: relative; top: -12px">投票中</span>
                         </td>
                         <td>
                             <span class="refer issue">#44</span>
@@ -395,22 +396,27 @@
                     </tr>
                     <tr>
                         <td>支持下载服务端及插件</td>
-                        <td id="tip4">
+                        <td>
                             <div class="flex">
                                 (1) 支持下载原版服务端
                                 &nbsp;&nbsp;
                                 <span class="label clz">投票中</span>
                             </div>
-                            <br><br>
+                            <br>
                             <div class="flex">
                                 (2) 支持下载第三方服务端 / 插件
                                 &nbsp;&nbsp;
-                                <td>
-                                    （2）超出启动器范畴，暂不考虑
-                                </td>
                             </div>
-                        </td><span class="refer issue">#112</span>
-                            <span class="refer issue">#108</span>
+                        </td>
+                        <td>
+                            <div class="flex" style="gap: 12px;">
+                                (1)
+                                <span class="refer issue">#112</span>
+                                <span class="refer issue">#108</span>
+                            </div>
+                            <br>
+                            (2) 超出启动器范畴，暂不考虑
+                        </td>
                     </tr>
                     <tr>
                         <td>引进新 Mod / 整合包下载源</td>
@@ -818,7 +824,8 @@
                         <td>请检查您的网络环境，如无问题则请前往 Modrinth 或 CurseForge 网站内及 HMCL、BakaXL 内查看是否有图标，若均无图标，则该 Mod 作者未上传图标，非 PCL 问题。</td>
                         <td><span class="refer issue">#3143</span></td>
                     </tr>
-                    <td>无法更新 PCL</td>
+                    <tr>
+                        <td>无法更新 PCL</td>
                         <td id="tip5">
                             请按下 Win+X ，点击 Windows PowerShell（管理员），并输入如下命令 
                             <p></p>
@@ -904,10 +911,11 @@
                             <a class="ghAt">@MFn233</a>
                         </td>
                     </tr>
-                    <tr>
+                    <!-- Wait to join PCL, hide -->
+                    <!-- <tr>
                         <td>每日整合包推荐</td>
                         <td>
-                            https://sodamc.com/31402-29042412.html
+                            <a class="copyLink">https://sodamc.com/31402-29042412.html</a>
                         </td>
                         <td>
                             <a class="copyLink">https://pclsub.sodamc.com/</a>
@@ -915,8 +923,8 @@
                         <td>
                             <a class="ghAt">@wkea</a>
                         </td>
-                    <!-- Wait to join PCL, hide -->
-                    <!-- <tr>
+                    </tr>
+                    <tr>
                         <td>历史上的今天</td>
                         <td>
                             <a class="copyLink">https://github.com/hsuchenghao/pcl-history-today-go</a>

@@ -90,6 +90,7 @@ function setLinkContentSameLink() {
     const linkElements = document.querySelectorAll("a.copyLink");
     for (let linkElement of linkElements) {
         linkElement.setAttribute("href", linkElement.innerHTML.toString());
+        linkElement.setAttribute("target", "_blank");
     }
 }
 
