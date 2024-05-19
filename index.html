@@ -108,10 +108,12 @@
                     </tr>
                     <tr>
                         <td>无法登录正版账户：<br>您可能没有在 Minecraft 官网创建档案，或者没有购买 Minecraft。</td>
-                        <td>是 Mojang 的 Bug，与 PCL 无关。请前往 <a href="https://minecraft.net">Minecraft.net</a> 登录您的 Minecraft 账号后，稍等一会即可使用 PCL 正常进行登录。</td>
+                        <td> 如果您确认您已购买 Minecraft 并创建档案，但还是出现了此问题，此 Bug 预计将在下个版本修复。可使用临时解决方案，前往 [Minecraft&nbsp;官网](https://www.minecraft.net/login) 登录您拥有 Minecraft 的 Microsoft 账号后，稍等片刻即可使用 PCL 正常登录。</td>
                         <td>
                             <span class="refer issue">#1264</span>
                             <span class="refer issue">#1299</span>
+                            <span class="refer issue">#3702</span>
+                            <span class="refer issue">（#3776）</span>
                         </td>
                     </tr>
                     <tr>
@@ -226,15 +228,6 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>支持更新 Mod</td>
-                        <td class="center">
-                            <span class="label clz">处理中</span>
-                        </td>
-                        <td>
-                            <span class="refer issue">#102</span>
-                        </td>
-                    </tr>
-                    <tr>
                         <td>支持更新整合包</td>
                         <td>因新旧整合包可能存在兼容性等冲突问题，不会制作。</td>
                         <td>
@@ -295,7 +288,7 @@
                     <tr>
                         <td>1.19.3+ 及以上版本不支持自定义皮肤</td>
                         <td class="center">
-                            <span class="label tpz">投票中</span>
+                            <span class="label tpz" style="position: relative; top: 8px">投票中</span>
                         </td>
                         <td>
                             <span class="refer issue">#1288</span>
@@ -364,8 +357,9 @@
                     </tr>
                     <tr>
                         <td>支持下载资源包<br>（材质包 & 纹理包）</td>
-                        <td class="center">
-                            <span class="label tpz" style="position: relative; top: 8px">投票中</span>
+                        <td class="center border-bottom">
+                            <br>
+                            <span class="label tpz" style="position: relative; top: -12px">投票中</span>
                         </td>
                         <td>
                             <span class="refer issue">#44</span>
@@ -401,10 +395,27 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>支持下载第三方服务端及插件</td>
-                        <td>PCL 是启动器，此功能超出了启动器的范畴</td>
+                        <td>支持下载服务端及插件</td>
                         <td>
-                            <span class="refer issue">#108</span>
+                            <div class="flex">
+                                (1) 支持下载原版服务端
+                                &nbsp;&nbsp;
+                                <span class="label clz">投票中</span>
+                            </div>
+                            <br>
+                            <div class="flex">
+                                (2) 支持下载第三方服务端 / 插件
+                                &nbsp;&nbsp;
+                            </div>
+                        </td>
+                        <td>
+                            <div class="flex" style="gap: 12px;">
+                                (1)
+                                <span class="refer issue">#112</span>
+                                <span class="refer issue">#108</span>
+                            </div>
+                            <br>
+                            (2) 超出启动器范畴，暂不考虑
                         </td>
                     </tr>
                     <tr>
@@ -469,7 +480,7 @@
                         <td>无法搜索到指定 Mod，<br>Mod 搜索筛选选项异常，<br>Mod 搜索匹配版本错误，<br>Mod 详情页前置问题，<br>等 Mod 搜索问题</td>
                         <td id="tip3">为 API 或 Mod 作者上传时的设置问题，PCL 无法解决。<tip onclick="jumpToTip(3)">[3]</tip></td>
                         <td>
-                            <span class="refer issue">#2096</span>
+                            <span class="refer issue">#2069</span>
                             <span class="refer issue">#2190</span>
                             <span class="refer issue">#2277</span>
                             <span class="refer issue">#2352</span>
@@ -683,6 +694,7 @@
                             <span class="refer issue">#3698</span>
                         </td>
                     </tr>
+<<<<<<< HEAD
                     <tr>
                         <td>将 GitHub 链接替换为镜像站</td>
                         <td>使用代理源并安全性与稳定性欠佳，不会制作。</td>
@@ -690,6 +702,8 @@
                             <span class="refer issue">#2879</span>
                         </td>
                     </tr>
+=======
+>>>>>>> 3fd0b778fa6f8be15b32ac2fa78b14d752a26cef
                 </table>
             </div>
             <div id="hardSearch">
@@ -820,7 +834,8 @@
                         <td>请检查您的网络环境，如无问题则请前往 Modrinth 或 CurseForge 网站内及 HMCL、BakaXL 内查看是否有图标，若均无图标，则该 Mod 作者未上传图标，非 PCL 问题。</td>
                         <td><span class="refer issue">#3143</span></td>
                     </tr>
-                    <td>无法更新 PCL</td>
+                    <tr>
+                        <td>无法更新 PCL</td>
                         <td id="tip5">
                             请按下 Win+X ，点击 Windows PowerShell（管理员），并输入如下命令 
                             <p></p>
@@ -908,6 +923,18 @@
                     </tr>
                     <!-- Wait to join PCL, hide -->
                     <!-- <tr>
+                        <td>每日整合包推荐</td>
+                        <td>
+                            <a class="copyLink">https://sodamc.com/31402-29042412.html</a>
+                        </td>
+                        <td>
+                            <a class="copyLink">https://pclsub.sodamc.com/</a>
+                        </td>
+                        <td>
+                            <a class="ghAt">@wkea</a>
+                        </td>
+                    </tr>
+                    <tr>
                         <td>历史上的今天</td>
                         <td>
                             <a class="copyLink">https://github.com/hsuchenghao/pcl-history-today-go</a>
@@ -936,9 +963,9 @@
             <br>
             <div id="updateLog">
                 <h5>
-                    本页作者 <a class="ghAt">@JingHai-Lingyun</a>，有问题/更新不及时请到 <a href="https://github.com/lingyunawa/pcl-doc/issues">Github</a> 提交反馈&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最近更新时间：2024-04-23 10:20:04
+                    本项目由 <a class="ghAt">@JingHai-Lingyun</a> 发起，有问题/更新不及时请到 <a href="https://github.com/PCL-Community/PCL2-1930-Web/issues">Github</a> 提交反馈&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最近更新时间：2024-05-09 17:34:18
                     <br><br>
-                    感谢 <a class="ghAt">@Deep-Dark-Forest</a> 给本文做出的贡献
+                    感谢 <a class="ghAt">@Deep-Dark-Forest</a> <a class="ghAt">@wuliaodexiaoluo</a> 给本项目做出的贡献
                 </h5>
             </div>
             <div id="footmark">
