@@ -5,9 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>常见 & 难检反馈及问题列表</title>
-        <link rel="shortcut icon" href="https://pcl-community.github.io/PCL2-1930-Web/static/img/pcl.ico" type="image/x-icon">
-        <link rel="stylesheet" href="https://pcl-community.github.io/PCL2-1930-Web/GmAlert/gmalert.min.css">
-        <link rel="stylesheet" href="https://pcl-community.github.io/PCL2-1930-Web/static/css/style.css">
+        <link rel="shortcut icon" href="static/img/pcl.ico" type="image/x-icon">
+        <link rel="stylesheet" href="GmAlert/gmalert.min.css">
+        <link rel="stylesheet" href="static/css/style.css">
     </head>
     <body>
         <div id="title">
@@ -41,7 +41,7 @@
             </div>
             <br><br>
             <div id="minecraft" >
-                <h1><img src="https://pcl-community.github.io/PCL2-1930-Web/static/img/minecraft.png"> <content>Minecraft 常见问题</content></h1>
+                <h1><img src="static/img/minecraft.png"> <content>Minecraft 常见问题</content></h1>
                 <table>
                     <colgroup>
                         <col style="width: 20%;">
@@ -73,7 +73,7 @@
                             </b>
                         </td>
                         <td>
-                            <span class="refer link" onclick="openBBSUpdate()">Bilibili 动态</span>
+                            <span class="refer link" onclick="Openlink('https://t.bilibili.com/891597994798874693')">Bilibili 动态</span>
                             <span class="refer issue">#3213</span>
                         </td>
                     </tr>
@@ -104,14 +104,16 @@
                     <tr>
                         <td>游戏崩溃</td>
                         <td>请依照附文步骤进行解决。</td>
-                        <td><span class="refer more" onclick="openGuide()">点击查看附文</span></td>
+                        <td><span class="refer more" onclick="Openlink('/guide.html')">点击查看附文</span></td>
                     </tr>
                     <tr>
                         <td>无法登录正版账户：<br>您可能没有在 Minecraft 官网创建档案，或者没有购买 Minecraft。</td>
-                        <td>是 Mojang 的 Bug，与 PCL 无关。请前往 <a href="https://minecraft.net">Minecraft.net</a> 登录您的 Minecraft 账号后，稍等一会即可使用 PCL 正常进行登录。</td>
+                        <td> 如果您确认您已购买 Minecraft 并创建档案，但还是出现了此问题，此 Bug 预计将在下个版本修复。可使用临时解决方案，前往 [Minecraft&nbsp;官网](https://www.minecraft.net/login) 登录您拥有 Minecraft 的 Microsoft 账号后，稍等片刻即可使用 PCL 正常登录。</td>
                         <td>
                             <span class="refer issue">#1264</span>
                             <span class="refer issue">#1299</span>
+                            <span class="refer issue">#3702</span>
+                            <span class="refer issue">（#3776）</span>
                         </td>
                     </tr>
                     <tr>
@@ -143,7 +145,7 @@
             </div>
             <br><br>
             <div id="launcher" >
-                <h1><img src="https://pcl-community.github.io/PCL2-1930-Web/static/img/pcl.ico"> <content>启动器常见问题</content></h1>
+                <h1><img src="static/img/pcl.ico"> <content>启动器常见问题</content></h1>
                 <table>
                     <colgroup>
                         <col style="width: 20%;">
@@ -164,7 +166,7 @@
                             <i>BakaXL 现已于 2023 年 10 月 8 日将其部分服务与 Octo 章鱼网络进行对接，并对其可用性进行初步评估，待评估完成后，Octo 网络会全面对其他启动器开放</i> <tip onclick="jumpToTip(2)">[2]</tip>
                         </td>
                         <td>
-                            <span class="refer link" onclick="open2611updateLog()">2.6.11 更新日志</span>
+                            <span class="refer link" onclick="Openlink('https://www.bilibili.com/read/cv28121157/')">2.6.11 更新日志</span>
                         </td>
                     </tr>
                     <tr>
@@ -226,15 +228,6 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>支持更新 Mod</td>
-                        <td class="center">
-                            <span class="label clz">处理中</span>
-                        </td>
-                        <td>
-                            <span class="refer issue">#102</span>
-                        </td>
-                    </tr>
-                    <tr>
                         <td>支持更新整合包</td>
                         <td>因新旧整合包可能存在兼容性等冲突问题，不会制作。</td>
                         <td>
@@ -245,7 +238,7 @@
                         <td>爱发电无法收到加群信息或更新密钥</td>
                         <td>加群请<b>在爱发电</b>回复【加群】，更新密钥<b>在爱发电</b>获取请回复【更新+识别码】。<br>如无法收到回复，很可能是您已经触发了人工回复，在等待人工回复的过程中无法使用命令。您如果只是想使用命令，可以发送【取消人工处理】。如仍旧没有回复，可以等待一会后再进行尝试。</td>
                         <td>
-                            <span class="refer link" onclick="openShimoDoc()">石墨文档</span>
+                            <span class="refer link" onclick="Openlink('https://shimo.im/docs/qKPttVvXKqPD8YDC')">石墨文档</span>
                             <span class="refer disc">#1529</span>
                             <span class="refer disc">#1867</span>
                         </td>
@@ -285,7 +278,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>支持调整 OptiFine 和第三方披风选项</td>
+                        <td>支持设置和修改第三方披风</td>
                         <td>暂时不打算制作。</td>
                         <td>
                             <span class="refer issue">#2045</span>
@@ -293,9 +286,9 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>1.19.3+ 及以上版本不支持自定义皮肤</td>
+                        <td>支持离线模式下 1.19.3 及以上版本的自定义皮肤功能</td>
                         <td class="center">
-                            <span class="label tpz">投票中</span>
+                            <span class="label tpz" style="position: relative; top: 8px">投票中</span>
                         </td>
                         <td>
                             <span class="refer issue">#1288</span>
@@ -349,6 +342,23 @@
                         </td>
                     </tr>
                     <tr>
+                        <td>支持安装 Legacy Fabric、Legacy Fabric API、Babric 等</td>
+                        <td>已不再考虑专门为 Minecraft 1.9 及以前的版本追加新功能。</td>
+                        <span class="refer issue">#3171 #283</span>
+                    </tr>
+                    <tr>
+                        <td>添加、修改、更新、移除<br>已安装版本的 OptiFine、Forge <br>等组件和模组加载器</td>
+                        <td class="center">
+                            <span class="label tpz" style="transform: translateY(7px);">投票中</span>
+                            <br>
+                            <i><b>搜索关键词：Fabric、Forge、OptiFine、LiteLoader、NeoForge、Quilt</b></i>
+                        </td>
+                        <td>
+                            <span class="refer issue">#220</span>
+                            <span class="refer disc">#227</span>
+                        </td>
+                    </tr>
+                    <tr>
                         <td>安装整合包时支持修改模组加载器版本</td>
                         <td>修改模组加载器版本可能会导致严重的兼容性问题，请联系整合包作者解决，PCL 不会支持该功能。</td>
                         <td>
@@ -356,16 +366,10 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>将 GitHub 链接替换为镜像站</td>
-                        <td><i>“使用代理源并不安全也不稳定，暂不考虑……” ——龙腾猫跃</i></td>
-                        <td>
-                            <span class="refer pr">#2879</span>
-                        </td>
-                    </tr>
-                    <tr>
                         <td>支持下载资源包<br>（材质包 & 纹理包）</td>
-                        <td class="center">
-                            <span class="label tpz" style="position: relative; top: 8px">投票中</span>
+                        <td class="center border-bottom">
+                            <br>
+                            <span class="label tpz" style="position: relative; top: -12px">投票中</span>
                         </td>
                         <td>
                             <span class="refer issue">#44</span>
@@ -401,10 +405,34 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>支持下载第三方服务端及插件</td>
-                        <td>PCL 是启动器，此功能超出了启动器的范畴</td>
+                        <td>支持下载服务端及插件</td>
                         <td>
-                            <span class="refer issue">#108</span>
+                            <div class="flex">
+                                (1) 支持下载原版服务端
+                                &nbsp;&nbsp;
+                                <span class="label clz">投票中</span>
+                            </div>
+                            <br>
+                            <div class="flex">
+                                (2) 支持下载第三方服务端 / 插件
+                                &nbsp;&nbsp;
+                            </div>
+                        </td>
+                        <td>
+                            <div class="flex" style="gap: 12px;">
+                                (1)
+                                <span class="refer issue">#112</span>
+                                <span class="refer issue">#108</span>
+                            </div>
+                            <br>
+                            (2) 超出启动器范畴，暂不考虑
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>支持下载特定版本的 Java</td>
+                        <td>没有合适的下载源，暂不考虑。</td>
+                        <td>
+                            <span class="refer issue">#3585</span>
                         </td>
                     </tr>
                     <tr>
@@ -412,18 +440,6 @@
                         <td>没有其他可用的国内的 API</td>
                         <td>
                             <span class="refer issue">#1658</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>添加、修改、更新、移除<br>已安装版本的 OptiFine、Forge <br>等组件和模组加载器</td>
-                        <td class="center">
-                            <span class="label tpz" style="transform: translateY(7px);">投票中</span>
-                            <br>
-                            <i><b>搜索关键词：Fabric、Forge、OptiFine、LiteLoader、NeoForge、Quilt</b></i>
-                        </td>
-                        <td>
-                            <span class="refer issue">#220</span>
-                            <span class="refer disc">#227</span>
                         </td>
                     </tr>
                     <tr>
@@ -469,7 +485,7 @@
                         <td>无法搜索到指定 Mod，<br>Mod 搜索筛选选项异常，<br>Mod 搜索匹配版本错误，<br>Mod 详情页前置问题，<br>等 Mod 搜索问题</td>
                         <td id="tip3">为 API 或 Mod 作者上传时的设置问题，PCL 无法解决。<tip onclick="jumpToTip(3)">[3]</tip></td>
                         <td>
-                            <span class="refer issue">#2096</span>
+                            <span class="refer issue">#2069</span>
                             <span class="refer issue">#2190</span>
                             <span class="refer issue">#2277</span>
                             <span class="refer issue">#2352</span>
@@ -528,8 +544,20 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>添加更多 Minecraft 版本</td>
-                        <td>不会添加除现已收录的远古版本外的其他远古版本，同时也不会收录社区玩家制作的<br>Minecraft 版本 (如：error422、alpha v1.2.3_03 等)。	</td>
+                        <td>添加更多 Minecraft 远古版本</td>
+                        <td>
+                        </td>
+                        <td class="center">
+                            <span class="tpz">投票中</span>
+                        </td>
+                        <td>
+                            <span class="refer issue">#3786</span>
+                            <span class="refer disc">#3787</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>添加更多非官方发布的 Minecraft 版本</td>
+                        <td>不会收录社区玩家制作的<br>Minecraft 版本 (如：error422、alpha v1.2.3_03 等)。	</td>
                         <td>
                             <span class="refer issue">#698</span>
                             <span class="refer issue">#2575</span>
@@ -631,7 +659,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>制作简易版 PCL</td>
+                        <td>开发简易版 PCL</td>
                         <td>
                             不会制作。
                             <br>
@@ -640,6 +668,13 @@
                         <td>
                             <span class="refer issue">#2330</span>
                             <span class="refer issue">#3130</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>上架微软商店</td>
+                        <td>不会制作该功能。</td>
+                        <td>
+                            <span class="refer issue">#1278</span>
                         </td>
                     </tr>
                     <tr>
@@ -677,8 +712,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>删除 Libraries 文件夹后补全文件失败</td>
-                        <td>Libraries 文件夹中文件只能在安装 Forge 时动态生成，除此之外没有渠道进行补全。</td>
+                        <td>删除 Libraries 文件夹或其中的文件后补全文件失败</td>
+                        <td>PCL 无法在 Libraries 文件不全的情况下完成文件补全。</td>
                         <td>
                             <span class="refer issue">#3698</span>
                         </td>
@@ -690,10 +725,17 @@
                             <span class="refer issue">#2879</span>
                         </td>
                     </tr>
+                    <tr>
+                        <td>微软账户登录页面无法正确加载：当前页面的脚本发生错误</td>
+                        <td>此为微软更新了登录页面导致无法使用 WebBrowser 渲染页面所致。快照版已临时修复该问题，在最新正式版发布前请手动点击窗口下方的提示文本以使用系统浏览器登录。</td>
+                        <td>
+                            <span class="refer issue">#3849</span>
+                        </td>
+                    </tr>
                 </table>
             </div>
             <div id="hardSearch">
-                <h1><img src="https://pcl-community.github.io/PCL2-1930-Web/static/img/compass.png"> <content>难检反馈</content></h1>
+                <h1><img src="static/img/compass.png"> <content>难检反馈</content></h1>
                 <table>
                     <colgroup>
                         <col style="width: 20%;">
@@ -711,22 +753,17 @@
                         <td>
                             <div class="flex" style="position:relative; left: 20px;">
                                 Label：
-                                <span class="label dsf" style="line-height: 20.5px;position: relative;top:-1px" onclick="open3rdPartyPage()">第三方</span>
+                                <span class="label dsf" style="line-height: 20.5px;position: relative;top:-1px" onclick="Openlink('https://github.com/Hex-Dragon/PCL2/issues?q=label%3A%E7%AC%AC%E4%B8%89%E6%96%B9+is%3Aclosed')">第三方</span>
                                 <span style="font-size:12px; align-self:flex-end; position:relative; bottom:2px; color:#777777;">（点击前往）</span>
                             </div>
                         </td>
                     </tr>
-                    <tr>
-                        <td>Mod 下载详情页加载动画 UI 在加载后未能隐藏</td>
-                        <td>
-                            需要开启调试模式的复现日志以显示加载动画 Debug 信息来修复此问题。
-                            <br>
-                            <i class="canselect">搜索关键词：加载动画、加载图标、Mod 下载、列表、UI、隐藏、消失</i>
-                        </td>
-                        <td>
-                            <span class="refer issue">#1624</span>
-                        </td>
-                    </tr>
+                    <tr>因使用 32 位系统引起的问题</tr>
+                    <td>新版 Minecraft 已不支持 32 位系统，因此不会再额外为 32 位进行修复和调整。</td>
+                    <td>
+                        <span class="refer issue">#3649</span>
+                    </td>
+                    
                     <tr>
                         <td>因系统问题无法打开 PCL</td>
                         <td>
@@ -748,11 +785,41 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>上架微软商店</td>
-                        <td>不会制作该功能。</td>
+                        <td>调试模式性能损耗过大</td>
+                        <td>个别问题，无法稳定复现。</td>
                         <td>
-                            <span class="refer issue">#1278</span>
+                            <span class="refer issue">#365</span>
                         </td>
+                    </tr>
+                    <tr>
+                        <td>Mod 下载详情页加载动画 UI 在加载后未能隐藏</td>
+                        <td class="center">
+                            <span class="label clz">处理中</span>
+                        </td>
+                        <td>
+                            <span class="refer issue">#1624</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>无法加载 Mod 图标</td>
+                        <td>请检查您的网络环境，如无问题则请前往 Modrinth 或 CurseForge 网站内及 HMCL、BakaXL 内查看是否有图标，若均无图标，则该 Mod 作者未上传图标，非 PCL 问题。</td>
+                        <td><span class="refer issue">#3143</span></td>
+                    </tr>
+                    <tr>
+                        <td>无法更新 PCL</td>
+                        <td id="tip5">
+                            请按下 Win+X ，点击 Windows PowerShell（管理员），并输入如下命令 
+                            <p></p>
+                            <span class="command" onclick="copyCommand(1)">netsh interface ip set dns  "适配器名称" static 8.8.8.8</span> <tip onclick="jumpToTip(5)">[5]</tip><span style="font-size: 12px; display: inline-block; transform: translateY(-6px);">，可点击复制</span>
+                            <p></p>
+                            如果您使用的是 <b>有线连接（网线）</b>，请将 <b>适配器名称</b> 替换为 <b>以太网</b>，如果您使用的是 <b>WiFi</b>，请将 <b>适配器名称</b> 替换为 <b>WLAN</b>，然后输入
+                            <p></p>
+                            <span class="command" onclick="copyCommand(2)">nslookup raw.githubusercontent.com</span> <span style="font-size: 12px; display: inline-block; transform: translateY(-6px);">可点击复制</span>
+                            <p></p>确认 <b>非权威应答</b> 的 <b>Addresses</b> 项的值不为 0.0.0.0、127.0.0.1、:::、:::1。
+                        </td> 
+                        <td>
+                            <span class="refer issue">#3505</span>
+                        </td>  
                     </tr>
                     <tr>
                         <td>使用特定 Java 时无法结束或者取消启动 Minecraft</td>
@@ -798,10 +865,15 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>调试模式性能损耗过大</td>
-                        <td>个别问题，无法稳定复现。</td>
                         <td>
-                            <span class="refer issue">#365</span>
+                            启动 Minecrat 1.7.10-1.12.2 游戏内无声音
+                        </td>
+                        <td>
+                            此为 OpenAL 初始化失败所致，请在游戏启动后按下 F3+T 来重新初始化 OpenAL。
+                        </td>
+                        <td>
+                            <span class="refer issue">#3779</span>
+                            <span class="refer link" onclick="Openlink('https://bugs.mojang.com/browse/MC-9974')">MC-9974</span>
                         </td>
                     </tr>
                     <tr>
@@ -816,35 +888,6 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>无法加载 Mod 图标</td>
-                        <td>请检查您的网络环境，如无问题则请前往 Modrinth 或 CurseForge 网站内及 HMCL、BakaXL 内查看是否有图标，若均无图标，则该 Mod 作者未上传图标，非 PCL 问题。</td>
-                        <td><span class="refer issue">#3143</span></td>
-                    </tr>
-                    <td>无法更新 PCL</td>
-                        <td id="tip5">
-                            请按下 Win+X ，点击 Windows PowerShell（管理员），并输入如下命令 
-                            <p></p>
-                            <span class="command" onclick="copyCommand(1)">netsh interface ip set dns  "适配器名称" static 8.8.8.8</span> <tip onclick="jumpToTip(5)">[5]</tip><span style="font-size: 12px; display: inline-block; transform: translateY(-6px);">，可点击复制</span>
-                            <p></p>
-                            如果您使用的是 <b>有线连接（网线）</b>，请将 <b>适配器名称</b> 替换为 <b>以太网</b>，如果您使用的是 <b>WiFi</b>，请将 <b>适配器名称</b> 替换为 <b>WLAN</b>，然后输入
-                            <p></p>
-                            <span class="command" onclick="copyCommand(2)">nslookup raw.githubusercontent.com</span> <span style="font-size: 12px; display: inline-block; transform: translateY(-6px);">可点击复制</span>
-                            <p></p>确认 <b>非权威应答</b> 的 <b>Addresses</b> 项的值不为 0.0.0.0、127.0.0.1、:::、:::1。
-                        </td> 
-                        <td>
-                            <span class="refer issue">#3505</span>
-                        </td>  
-                    </tr>
-                    <tr>
-                        <td>PCL 日志启动部分出现乱码</td>
-                        <td>
-                            此为在文件夹插入 Unicode 控制字符而 jlw 不支持 Unicode 控制字符或在 Windows 中启用了 UTF-8 解码支持所致，非 PCL 问题。
-                        </td>
-                        <td>
-                            <span class="refer issue">#3236</span>
-                        </td>   
-                    </tr>   
-                    <tr>
                         <td>日志出现 not xxx in java.library.path</td>
                         <td>
                             Java 不完整，非 PCL 问题，如果可能，请您自行准备 Java 而不是使用自动补全 Java 功能。
@@ -856,7 +899,7 @@
                 </table>
             </div>
             <div id="yszy">
-                <h1><img src="https://pcl-community.github.io/PCL2-1930-Web/static/img/book.png"> <content>预设主页</content></h1>
+                <h1><img src="static/img/book.png"> <content>预设主页</content></h1>
                 <div class="important-hint">
                     <p class="markdown-alert-title">
                         <svg class="svg" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
@@ -908,6 +951,18 @@
                     </tr>
                     <!-- Wait to join PCL, hide -->
                     <!-- <tr>
+                        <td>每日整合包推荐</td>
+                        <td>
+                            <a class="copyLink">https://sodamc.com/31402-29042412.html</a>
+                        </td>
+                        <td>
+                            <a class="copyLink">https://pclsub.sodamc.com/</a>
+                        </td>
+                        <td>
+                            <a class="ghAt">@wkea</a>
+                        </td>
+                    </tr>
+                    <tr>
                         <td>历史上的今天</td>
                         <td>
                             <a class="copyLink">https://github.com/hsuchenghao/pcl-history-today-go</a>
@@ -936,9 +991,9 @@
             <br>
             <div id="updateLog">
                 <h5>
-                    本页作者 <a class="ghAt">@JingHai-Lingyun</a>，有问题/更新不及时请到 <a href="https://github.com/lingyunawa/pcl-doc/issues">Github</a> 提交反馈&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最近更新时间：2024-04-23 10:20:04
+                    本项目由 <a class="ghAt">@JingHai-Lingyun</a> 发起，有问题/更新不及时请到 <a href="https://github.com/PCL-Community/PCL2-1930-Web/issues">Github</a> 提交反馈&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最近更新时间：2024-05-09 17:34:18
                     <br><br>
-                    感谢 <a class="ghAt">@Deep-Dark-Forest</a> 给本文做出的贡献
+                    感谢 <a class="ghAt">@Deep-Dark-Forest</a> <a class="ghAt">@wuliaodexiaoluo</a> 给本项目做出的贡献
                 </h5>
             </div>
             <div id="footmark">
@@ -968,8 +1023,8 @@
                 </div>
             </div>
         </div>
-        <script src="https://pcl-community.github.io/PCL2-1930-Web/GmAlert/gmalert.min.js"></script>
-        <script src="https://pcl-community.github.io/PCL2-1930-Web/static/js/script.js"></script>
-
+        <script src="GmAlert/gmalert.min.js"></script>
+        <script src="static/js/script.js"></script>
+        <a href="https://github.com/PCL-Community"></a>
     </body>
 </html>

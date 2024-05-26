@@ -90,6 +90,7 @@ function setLinkContentSameLink() {
     const linkElements = document.querySelectorAll("a.copyLink");
     for (let linkElement of linkElements) {
         linkElement.setAttribute("href", linkElement.innerHTML.toString());
+        linkElement.setAttribute("target", "_blank");
     }
 }
 
@@ -106,28 +107,9 @@ function setGhAtLink() {
     }
 }
 
-// Links
-function openGuide() {
-    window.open("/guide.html");
-}
-function open2611updateLog() {
-    window.open("https://www.bilibili.com/read/cv28121157/");
-}
-function openShimoDoc() {
-    window.open("https://shimo.im/docs/qKPttVvXKqPD8YDC");
-}
-function open3rdPartyPage() {
-    window.open(
-        "https://github.com/Hex-Dragon/PCL2/issues?q=label%3A%E7%AC%AC%E4%B8%89%E6%96%B9+is%3Aclosed"
-    );
-}
-function openWikiAnc() {
-    window.open(
-        "https://zh.minecraft.wiki/w/Minecraft_Wiki:%E8%BF%81%E7%A7%BB%E9%80%9A%E7%9F%A5?variant=zh-cn#%E6%88%91%E4%BB%AC%E9%9C%80%E8%A6%81%E4%BD%A0%E7%9A%84%E5%B8%AE%E5%8A%A9%EF%BC%81"
-    );
-}
-function openBBSUpdate() {
-    window.open("https://t.bilibili.com/891597994798874693");
+
+function Openlink(Url) {
+    window.open(Url)
 }
 
 // FootMarks
@@ -195,6 +177,6 @@ window.onload = function () {
        \\ \\_\\    \\ \\____/   \\ \\____/  /\\______/  \\/_/\\_\\\\_\\/    \\ \\_\\      \\ \\_\\  \\ \\____/  \\ \\____/
         \\/_/     \\/___/     \\/___/   \\/_____/      \\/_//_/      \\/_/       \\/_/   \\/___/    \\/___/ `);
     console.log(
-        "Based on WForst-Breeze/PCL2-1930 (https://github.com/WForst-Breeze/PCL2-1930/), Licensed for LingyunAwA to make this page"
+        "Based on WForst-Breeze/PCL2-1930 (https://github.com/PCL-Community/PCL2-1930/), Licensed for LingyunAwA to make this page"
     );
 };
