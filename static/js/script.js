@@ -45,7 +45,7 @@ function setDiscTrigger() {
 }
 
 // Set All PR Element's Trigger
-function setDiscTrigger() {
+function setPrTrigger() {
     const discElements = document.getElementsByClassName("pr");
     for (let discElement of discElements) {
         let dataLink = discElement.getAttribute("data-link");
@@ -107,9 +107,14 @@ function setGhAtLink() {
     }
 }
 
+function Missing(why) {
+    const element = GmAlert.notice(`这个链接所指向的内容${why}`, "warning", {
+        timeout: 2000,
+    })["$el"];
+}
 
 function Openlink(Url) {
-    window.open(Url)
+    window.open(Url);
 }
 
 // FootMarks
@@ -158,13 +163,13 @@ function copyCommand(index) {
     const element = GmAlert.notice("复制成功", "success", {
         timeout: 2000,
     })["$el"];
-    element.style.color = "#E0E0E0";
 }
 
 // 初始化
 window.onload = function () {
     setIssueTrigger();
     setDiscTrigger();
+    setPrTrigger();
     setInhelpTrigger();
     setTipUnfocusTrigger();
     setLinkContentSameLink();
