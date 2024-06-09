@@ -146,6 +146,9 @@ div#content div#titleExample .badge.ok {
   border-radius: 1px;
   color: #e0e0e0;
 }
+.refer[data-pass="pass"] {
+  cursor: auto;
+}
 .refer.issue {
   background-color: rgba(66, 164, 245, 0.348);
 }
