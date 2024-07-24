@@ -1,15 +1,33 @@
-<div align="center">
+# PCL2-1930-Web
 
-# 本期更新内容
+This template should help get you started developing with Vue 3 in Vite.
 
-#### （更新时间：2024-05-31 20:21:15）
+## Recommended IDE Setup
 
-1: 增加新主页：每日整合包推荐，Minecraft 皮肤推荐 (by @wkea)
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-</div>
+## Type Support for `.vue` Imports in TS
 
----
+TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
 
-###### 这个文档由 @JingHai-Lingyun 维护，但现在他有点忙，管不过来这个文档了
-###### 如果有谁能来帮忙维护维护那最好了
-###### 没有人的话... 预估一个月内不会有更新了... 只会有 Bug 修复
+## Customize configuration
+
+See [Vite Configuration Reference](https://vitejs.dev/config/).
+
+## Project Setup
+
+```sh
+pnpm install
+```
+
+### Compile and Hot-Reload for Development
+
+```sh
+pnpm dev
+```
+
+### Type-Check, Compile and Minify for Production
+
+```sh
+pnpm build
+```

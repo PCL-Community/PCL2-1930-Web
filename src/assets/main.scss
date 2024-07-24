@@ -1,0 +1,50 @@
+// Theme
+
+$light-vars: (
+    bg1: #ffffff,
+    fg1: #000000,
+    shadow-c1: #8e8e8e,
+    shadow-c2: #8e8e8e,
+    card-bg: #f6f8fa,
+    card-shadow: (
+        5px 5px 5px #d1d3d5,
+        -5px -5px 5px #ffffff,
+    ),
+);
+$dark-vars: (
+    bg1: #0d1117,
+    fg1: #ffffff,
+    shadow-c1: #3b3b3b,
+    shadow-c2: #ffffff,
+    card-bg: #010409,
+    card-shadow: (
+        5px 5px 5px #000000,
+        -5px -5px 5px #00040d,
+    ),
+);
+
+@mixin use-theme($theme) {
+    @each $key, $value in $theme {
+        --#{$key}: #{$value};
+    }
+}
+
+:root {
+    @include use-theme($light-vars);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        @include use-theme($dark-vars);
+    }
+}
+
+// Main
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg1);
+    color: var(--fg1);
+    user-select: none;
+}
