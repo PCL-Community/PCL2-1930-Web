@@ -5,8 +5,9 @@ import MyPoweredBy from "@/components/MyPoweredBy.vue";
 <template>
     <main>
         <div class="Title">
+            <img src="^/images/logoraw.png" width="128" />
             <span class="title">Welcome.</span>
-            <span class="desp">PCL2 #1930(Discussion) Document Web Mirror</span>
+            <span class="desp">PCL2 #1930(Discussion) 文档 | 网页镜像</span>
         </div>
         <div class="pb-container">
             <MyPoweredBy
@@ -18,17 +19,17 @@ import MyPoweredBy from "@/components/MyPoweredBy.vue";
                 spcd3="rgba(107, 159, 147, 0.4)"
                 spco="rgba(107, 159, 147, 0.2)">
                 <template #image>
-                    <img src="/logo.png" width="64" />
+                    <img src="^/images/builder.png" width="64" />
                 </template>
             </MyPoweredBy>
             <MyPoweredBy
                 title="Degisn & Create By"
                 text="凌云"
-                spc="#4A3C6A"
-                spcd1="rgba(74, 60, 106, 0.35)"
-                spcd2="rgba(74, 60, 106, 0.37)"
-                spcd3="rgba(74, 60, 106, 0.4)"
-                spco=" rgba(74, 60, 106, 0.2)">
+                spc="#5631A7"
+                spcd1="rgba(86, 49, 167, 0.35)"
+                spcd2="rgba(86, 49, 167, 0.37)"
+                spcd3="rgba(86, 49, 167, 0.4)"
+                spco=" rgba(86, 49, 167, 0.2)">
                 <template #image>
                     <img class="avatar" src="^/images/lingyun.png" />
                 </template>
@@ -52,11 +53,13 @@ import MyPoweredBy from "@/components/MyPoweredBy.vue";
 <style lang="scss" scoped>
 main {
     width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 3fr;
-    gap: 48px 0px;
+    grid-template-rows: 120px 1fr 3fr;
+    gap: 0px 0px;
     grid-template-areas:
+        "NULL"
         "Title"
         "PoweredBy";
 }

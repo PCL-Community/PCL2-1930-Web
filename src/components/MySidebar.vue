@@ -17,13 +17,13 @@ const switchPage = (path: string) => {
     <MyCard style="width: 80px; height: 100%">
         <div class="items">
             <MySidebarButton
-                color="#6B9F93"
-                @click="openUri('https://github.com/orgs/PCL-Community')">
+                color="#9D805E"
+                @click="openUri('https://github.com/PCL-Community/PCL2-1930-Web')">
                 <template #image>
                     <img
-                        src="/logo.png"
+                        src="^/images/logoraw.png"
                         width="86"
-                        style="transform: translate(-6px, -6px)" />
+                        style="transform: translate(-6px, -12px)" />
                 </template>
             </MySidebarButton>
             <hr />
@@ -103,7 +103,7 @@ const switchPage = (path: string) => {
                 text="GitHub"
                 :color="['#a5a5a5', '#5c5c5c']"
                 @click="
-                    openUri('https://github.com/PCL-Community/PCL2-1930-Web')
+                    openUri('https://github.com/PCL-Community')
                 ">
                 <template #image>
                     <svg
