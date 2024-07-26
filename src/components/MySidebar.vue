@@ -7,9 +7,10 @@ const openUri = (uri: string) => {
     window.open(uri, "_blank");
 };
 
+const XRouter = useRouter();
+
 const switchPage = (path: string) => {
-    const $router = useRouter();
-    $router.push(path);
+    XRouter.push(path);
 };
 </script>
 
@@ -18,7 +19,9 @@ const switchPage = (path: string) => {
         <div class="items">
             <MySidebarButton
                 color="#9D805E"
-                @click="openUri('https://github.com/PCL-Community/PCL2-1930-Web')">
+                @click="
+                    openUri('https://github.com/PCL-Community/PCL2-1930-Web')
+                ">
                 <template #image>
                     <img
                         src="^/images/logoraw.png"
@@ -35,7 +38,7 @@ const switchPage = (path: string) => {
                         --spc-d2: rgba(255, 120, 0, 0.27);
                         --spc-d3: rgba(255, 120, 0, 0.27);
                     "
-                    @click="">
+                    @click="switchPage('/search')">
                     <template #image>
                         <svg
                             class="icon"
@@ -50,7 +53,9 @@ const switchPage = (path: string) => {
                         </svg>
                     </template>
                 </MySidebarButton>
-                <MySidebarButton color="#80C46D" @click="">
+                <MySidebarButton
+                    color="#80C46D"
+                    @click="switchPage('/q/minecraft')">
                     <template #image>
                         <img
                             src="^/images/minecraft.png"
@@ -58,7 +63,7 @@ const switchPage = (path: string) => {
                             style="transform: translate(-6px, -6px)" />
                     </template>
                 </MySidebarButton>
-                <MySidebarButton color="#2D95F3" @click="">
+                <MySidebarButton color="#2D95F3" @click="switchPage('/q/pcl')">
                     <template #image>
                         <img
                             src="^/images/pcl.ico"
@@ -66,7 +71,7 @@ const switchPage = (path: string) => {
                             style="transform: translate(-6px, -6px)" />
                     </template>
                 </MySidebarButton>
-                <MySidebarButton color="#FF1414" @click="">
+                <MySidebarButton color="#FF1414" @click="switchPage('/q/hard')">
                     <template #image>
                         <img
                             src="^/images/compass.png"
@@ -81,7 +86,7 @@ const switchPage = (path: string) => {
                         --spc-d2: rgba(119, 0, 255, 0.32);
                         --spc-d3: rgba(119, 0, 255, 0.32);
                     "
-                    @click="">
+                    @click="switchPage('/q/homepage')">
                     <template #image>
                         <img
                             src="^/images/book.png"
@@ -89,7 +94,9 @@ const switchPage = (path: string) => {
                             style="transform: translate(-6px, -6px)" />
                     </template>
                 </MySidebarButton>
-                <MySidebarButton color="#F8DA3F" @click="">
+                <MySidebarButton
+                    color="#F8DA3F"
+                    @click="switchPage('/attachment')">
                     <template #image>
                         <img
                             src="^/images/gold.png"
@@ -102,9 +109,7 @@ const switchPage = (path: string) => {
             <MySidebarButton
                 text="GitHub"
                 :color="['#a5a5a5', '#5c5c5c']"
-                @click="
-                    openUri('https://github.com/PCL-Community')
-                ">
+                @click="openUri('https://github.com/PCL-Community')">
                 <template #image>
                     <svg
                         t="1721716831825"

@@ -10,6 +10,11 @@ $light-vars: (
         5px 5px 5px #d1d3d5,
         -5px -5px 5px #ffffff,
     ),
+    bg2: #f0f0f0,
+    ml-outlink: #fbe750,
+    ml-github: #dddddd,
+    ml-gitee: #eb0d15,
+    ml-custom-1: #0288d1,
 );
 $dark-vars: (
     bg1: #0d1117,
@@ -21,6 +26,11 @@ $dark-vars: (
         5px 5px 5px #000000,
         -5px -5px 5px #00040d,
     ),
+    bg2: #1f2020,
+    ml-outlink: #ab9e35,
+    ml-github: #3c3c3c,
+    ml-gitee: #b8252a,
+    ml-custom-1: #0071ae,
 );
 
 @mixin use-theme($theme) {
@@ -47,4 +57,30 @@ body {
     background-color: var(--bg1);
     color: var(--fg1);
     user-select: none;
+}
+
+table.MyTable {
+    width: 97%;
+    padding: 36px;
+    border-collapse: collapse;
+    th,
+    tr,
+    td {
+        border: 1px solid var(--fg1);
+    }
+    th {
+        padding: 8px;
+        font-size: 24px;
+        background-color: var(--bg1);
+    }
+    td {
+        text-align: center;
+        vertical-align: middle;
+        padding: 12px;
+        div.flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }
